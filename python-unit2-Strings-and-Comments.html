@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Μαθαίνω Python</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="python_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+<body class="single-blog-post">
+    <div class="page-header">
+           <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                              <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                 <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                 <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                  <!--  <li><a href="#">Register</a></li> -->
+                                <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                 </div>   <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/" rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                             <li><a href="https://kassapoglou.github.io/main/forum.html">Forum</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                               
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 2 - Python Strings and Comments </h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                              <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                  <!--  <img src="images/single-post.jpg" alt=""> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">24</div>
+                        <div class="month">Oct</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+                   
+
+                  
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+                   
+                </div><!-- .single-post-wrap -->
+
+             
+                <p>Στην σημερινή ενότητα θα αναπτύξουμε ένα ακόμα δωρεάν μάθημα 
+                    στην Python και πιο συγκεκριμένα θα δούμε την χρήση των Strings
+                    και τις δυνατότητές τους όπως και πως προσθέτουμε σχόλια (comments)
+                    στον κώδικα μας.</p>
+                
+                <p>Στον προηγούμενο κώδικα μας είχαμε γράψει τον εξής απλό κώδικα:</p>
+                <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+print('Hello, this is my first Python Program')
+                        </pre>
+                
+                
+                <p>Ένα function αποτελείται από κώδικα που ήδη έχει γραφτεί και 
+                    όταν καλείται εκτελεί μια προκαθορισμένη ενέργεια. Μέσα 
+                    από τις ενότητες του site, θα καλύψουμε ένα μεγάλο εύρος 
+                    από τα functions που προσφέρει η Python. Ίσως η πιο σημαντική
+                    function είναι εκείνη που μας δείχνει το αποτέλεσμα του κώδικα
+                    στην οθόνη μας, δηλαδή η print( ).</p>
+                
+                <p>Όπως ήδη έχουμε δει, για να καλέσουμε το function απλά γράφουμε
+                    το όνομα του και αμέσως μετά ανοίγουμε και κλείνουμε ένα σετ
+                    από παρενθέσεις. Μέσα στις παρενθέσεις γράφουμε την πληροφορία
+                    που θέλουμε να εκτυπώσουμε. Η αρχή και το τέλος αυτής της πληροφορίας
+                    ορίζονται από quote marks ( ‘ ‘ ). Αν για παράδειγμα, θέλαμε να 
+                    εκτυπώσουμε τα χαρακτηριστικά του αυτοκινήτου που μας αρέσει μέσα 
+                    από ένα απλό πρόγραμμα Python θα γράφαμε:</p>
+                
+                
+                 <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+print('Name: Aston Martin')
+print('Model: Vanquish S Coupe')
+print('Max Speed: 324 km/h')
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit2\app1.py"
+Name: Aston Martin
+Model: Vanquish S Coupe
+Max Speed: 324 km/h
+                        </pre>
+                
+                  <p>Είναι σημαντικό να γνωρίζεται ότι ο κώδικας στην Python 
+                      εκτελείται με την σειρά που γράφεται, δηλαδή από 
+                      πάνω προς τα κάτω.</p>
+                
+                  <p>Μια ομάδα από χαρακτήρες στην Python ορίζεται σαν String. 
+                      Οπότε κάθε ένα από τα πιο πάνω print( ) functions στην ουσία 
+                      εκτυπώνει ένα String μήνυμα. Τα μηνύματα αυτά έχουμε την 
+                      δυνατότητα να τα περικλείουμε είτε σε single quotes ( ‘ ‘) 
+                      είτε σε double quotes (“ ”). Ο πιο αιτία που μας οδηγεί να 
+                      χρησιμοποιήσουμε double quotes είναι όταν το String που θέλουμε 
+                      να δείξουμε στην οθόνη περιέχει απόστροφο στο συντακτικό του. Αυτό 
+                      θα μπέρδευε την Python και το πρόγραμμα μας δεν θα μπορούσε να
+                      εκτελεστεί.</p>
+                  
+                  <p>Προσθέτουμε λοιπόν ένα ακόμα print( ) στον κώδικα μας.</p>
+                  
+                                   <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: Aston Martin')
+print('Model: Vanquish S Coupe')
+print('Max Speed: 324 km/h')
+                        </pre>
+                
+                                    <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit2\app2.py"
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: Aston Martin
+Model: Vanquish S Coupe
+Max Speed: 324 km/h
+                        </pre>
+                
+                
+                                    <p>Ακριβώς με την ίδια λογική θα μπορούσαμε 
+                                        να χρησιμοποιήσουμε single quotes για να
+                                        εκτυπώσουμε ένα μήνυμα που περιέχει double 
+                                        quotes στην πρόταση του.</p>
+                                    
+                                    <p>Αλλάζουμε τον κώδικα μας όπως πιο κάτω:</p>
+                                    
+                 <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: "Aston Martin"')
+print('Model: "Vanquish S Coupe"')
+print('Max Speed: 324 km/h')
+                        </pre>
+                
+                                    <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit2\app3.py"
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: "Aston Martin"
+Model: "Vanquish S Coupe"
+Max Speed: 324 km/h
+                        </pre>
+                
+                                    <p>Η Python μας επιτρέπει να χρησιμοποιήσουμε και triple quotes είτε “ “ “ είτε ‘ ‘ ‘ . 
+                                        Τα triple quotes εννοείται ότι μπορούν να περιέχουν μηνύματα
+                                        με single quotes ή double quotes. Το κύριο χαρακτηριστικό
+                                        τους όμως είναι η δυνατότητα τους να περικλείουν πολλαπλές
+                                        γραμμές από Strings κάτι που λείπει σαν ικανότητα από τα 
+                                        single και τα double quotes.</p>  
+                                    
+                                    <p>Αλλάζουμε λοιπόν τον κώδικα μας πάλι όπως δείχνει το πιο κάτω παράδειγμα:</p>
+                               
+                                                     <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+print(""" The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. """)
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: "Aston Martin"')
+print('Model: "Vanquish S Coupe"')
+print('Max Speed: 324 km/h')
+                        </pre>
+                
+                                    <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit2\app4.py"
+ The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. 
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: "Aston Martin"
+Model: "Vanquish S Coupe"
+Max Speed: 324 km/h
+                        </pre>
+                                    
+                
+                                    <p>Τα comments είναι σύντομες επεξηγήσεις του κώδικα με την 
+                                        μορφή μικρού και συνοπτικού μηνύματος που τα αγνοεί η 
+                                        Python αλλά είναι χρήσιμα στον προγραμματιστή γιατί μπορεί 
+                                        να γυρίσει πίσω στον κώδικα που έγραψε πριν καιρό και να θυμηθεί 
+                                        διαβάζοντας τα comments για ποιο σκοπό είχαν φτιαχτεί συγκεκριμένες
+                                        ρουτίνες του κώδικα.</p>
+                                    
+                                    <p>Ας αλλάξουμε τον κώδικα μας για ακόμα μια φορά έτσι ώστε να προσθέσουμε και σχόλια:</p>
+                                    
+                                    
+                
+                 <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+# Technical specifications of the Aston Martin Vanquish
+print(""" The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. """)
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: "Aston Martin"')
+print('Model: "Vanquish S Coupe"')
+print('Max Speed: 324 km/h') # it prints the max speed of Aston Martin
+                        </pre>
+                
+                                    <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit2\app5.py"
+ The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. 
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: "Aston Martin"
+Model: "Vanquish S Coupe"
+Max Speed: 324 km/h
+                        </pre>
+                
+
+                
+                
+           
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="">
+
+                           
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό 
+                                  τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση 
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων Microsoft και Oracle 
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω συνεχώς 
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και εξειδικευμένες μεθόδους 
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.  
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
+                             <p>   Σας ευχαριστώ που επισκεφτήκατε την ιστοσελίδα μου.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+                
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+ 
+
+  
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
