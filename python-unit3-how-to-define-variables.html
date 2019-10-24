@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Μαθαίνω Python</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="python_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+<body class="single-blog-post">
+    <div class="page-header">
+           <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                              <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                 <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                 <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                  <!--  <li><a href="#">Register</a></li> -->
+                                <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                 </div>   <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/" rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                             <li><a href="https://kassapoglou.github.io/main/forum.html">Forum</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                               
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 3 - Defining Variables in Python </h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                              <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                  <!--  <img src="images/single-post.jpg" alt=""> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">25</div>
+                        <div class="month">Oct</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+                   
+
+                  
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+                   
+                </div><!-- .single-post-wrap -->
+
+             
+                <p>Στο σημερινό δωρεάν σεμινάριο της Python, 
+                    θα αναφερθούμε στον ορισμό των μεταβλητών και 
+                    τον συνδυασμό τους με Strings για την εκτύπωση 
+                    στην κονσόλα ολοκληρωμένων μηνυμάτων.</p>
+                
+                
+                <p>Είναι κοινή πρακτική τα προγράμματα να αποθηκεύουν 
+                    δεδομένα στην μνήμη του υπολογιστή για να μπορούν 
+                    να εκτελέσουν πιο γρήγορα πράξεις με αυτά. 
+                    Η προσωρινή αποθήκευση αυτών των δεδομένων γίνεται 
+                    με την μορφή μεταβλητών. Στην ουσία μια μεταβλητή 
+                    είναι ένα όνομα που αντιπροσωπεύει μια τιμή στην μνήμη 
+                    του υπολογιστή μας.</p>
+                
+                <p>Για να ορίσουμε στην Python μεταβλητές, 
+                    αρκεί να χρησιμοποιήσουμε ένα assignment statement 
+                    που έχει την εξής μορφή:</p>
+                <p><strong>variable = expression</strong></p>
+                
+                <p>Για παράδειγμα </p>
+                
+                <p><strong>x = 25 </strong></p>
+                
+                <p>Ας δούμε όμως ένα ολοκληρωμένο πρόγραμμα:</p>
+                
+             <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+#This program demonstrates a variable
+number = 10
+print("In the soccer team, I have the number")
+print(number) #Notice that we do not use quotes with the variables
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit3\app1.py"
+In the soccer team, I have the number
+10
+                        </pre>
+                
+                  <p>Σε αυτό το απλό πρόγραμμα, ορίζουμε μια μεταβλητή 
+                      με το όνομα number και αναθέτουμε σε αυτή την τιμή 10.
+                      Μετά εκτυπώνουμε ένα μήνυμα και μετά την τιμή της
+                      μεταβλητής. Δώστε προσοχή στο γεγονός ότι για να 
+                      εκτυπώσετε την τιμή με την οποία ισούται μια μεταβλητή,
+                      την γράφουμε μέσα στην print( ) μέθοδο χωρίς τα quotes.
+                      Επίσης η ανάθεση τιμών σε μια μεταβλητή γίνεται πάντα 
+                      από τα δεξιά προς τα αριστερά.</p>
+                  
+                  <p>Ας δούμε ένα ακόμα πρόγραμμα και αυτή τη φορά ας ορίσουμε δύο μεταβλητές.</p>
+                  
+                   <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+#This program demonstrates the use of two variables
+number = 10
+average = 1.4
+print("In the soccer team, I have the number")
+print(number) #Notice that we do not use quotes with the variables
+print("and I usually score an average of")
+print(average)
+print("goals per game")
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit3\app1.py"
+In the soccer team, I have the number
+10
+and I usually score an average of
+1.4
+goals per game
+                        </pre>
+                  
+                  <p>Στο πιο πάνω πρόγραμμα, προσθέτουμε μια ακόμα μεταβλητή που 
+                      εκτυπώνει στην οθόνη τον μέσο όρο σκοραρίσματος ανά 
+                      παιγνίδι. Η μεταβλητή number είναι είδος ακέραιου αριθμού,
+                      ενώ η μεταβλητή average είναι είδος δεκαδικού αριθμού.
+                      Η μεταβλητή παίρνει θα αποκτήσει το ίδιο data type
+                      με εκείνο που έχει η τιμή που της αναθέτουμε.</p>
+                  
+                  <p>Πρέπει επίσης να γνωρίζουμε ότι υπάρχουν μερικές
+                      λέξεις-κλειδιά που ήδη έχει δεσμεύσει η Python 
+                      για δική της χρήση και δεν μπορούμε να δώσουμε 
+                      τις δικές μας μεταβλητές ίδιο όνομα με εκείνο 
+                      που ήδη χρησιμοποιεί η Python. Αυτές τις λέξεις 
+                      κλειδιά δεν χρειάζεται να τις θυμάστε γιατί κάθε 
+                      αξιόλογο IDE που θα χρησιμοποιήσετε για την ανάπτυξη
+                      κώδικα Python θα “παραπονεθεί” όταν αντιληφθεί ότι 
+                      έχετε ονομάσει κάποια μεταβλητή σας με το ίδιο όνομα 
+                      που χρησιμοποιεί η Python για δική της χρήση. Αυτές οι 
+                      λέξεις κλειδιά είναι:</p>
+                  
+                   <img src="python-unit3/python keywords.png" alt="" class="center">
+                <p></p>
+                  
+                <p>Εκτός από τις λέξεις-κλειδιά που δεν μπορούμε να 
+                    χρησιμοποιήσουμε για ονόματα δικών μας μεταβλητών,
+                    υπάρχουν ακόμα λίγοι κανόνες:</p>
+                <ul>
+                    <li>Το όνομα της μεταβλητής δεν μπορεί να περιέχει κενά (π.χ. total average) </li>
+                    <li>Τα ονόματα των μεταβλητών μας πρέπει να ξεκινάνε με τον πρώτο χαρακτήρα να είναι ΄μόνο γράμμα ή underscore ( _ ). </li>
+                    <li>Μετά από τον πρώτο χαρακτήρα επιτρέπεται να χρησιμοποιήσουμε και αριθμούς</li>
+                    <li>Τέλος, η Python είναι case sensitive οπότε Car και car είναι δύο διαφορετικές μεταβλητές </li>
+                </ul>
+
+                <p>Ας δούμε τώρα πως θα μπορούσαμε να κάνουμε το προηγούμενο πρόγραμμα
+                    μας να έχει λιγότερες γραμμές κώδικα. Αυτό θα 
+                    το επιτύχουμε με καλύτερη χρησιμοποίηση της print( )
+                    η οποία μας επιτρέπει να δείχνουμε το μήνυμα μας και
+                    την τιμή μιας μεταβλητής μέσα στην ίδια μέθοδο, αρκεί 
+                    να χωρίζονται τα δύο αυτά στοιχεία από κόμμα. Εννοείτε
+                    ότι μπορούσαμε να είχαμε περισσότερα από ένα μήνυμα και
+                    περισσότερες από μια μεταβλητές μέσα στο ίδιο print( ).
+                    Στο αποτέλεσμα που εμφανίζεται παρατηρούμε επίσης ότι
+                    η Python προσθέτει αυτόματα ένα κενό ανάμεσα στο μήνυμα
+                    και την τιμή της μεταβλητής.</p>
+                
+                
+                                   <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+#This program demonstrates the use string and variable
+# inside the same print() method
+number = 10
+average = 1.4
+print("In the soccer team, I have the number", number)
+print("and I usually score an average of", average , "goals per game")
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit3\app1.py"
+In the soccer team, I have the number 10
+and I usually score an average of 1.4 goals per game
+                        </pre>
+                
+                
+                  <p>Επειδή υπάρχουν διαφορετικά είδη αριθμών (π.χ δεκαδικοί, ακέραιοι)
+                      η Python αντιστοιχεί κάποια data types σε αυτά για 
+                      να μπορεί να τα χειριστεί σωστά και να κάνει πράξεις 
+                      με αυτά. Όπως είπαμε πιο πάνω, όταν αναθέτουμε ένα 
+                      ακέραιο σε μια μεταβλητή, η Python το κατηγοριοποιεί
+                      σαν int και όταν έχουμε ένα δεκαδικό τότε το
+                      κατηγοριοποιεί σαν float.</p>
+                  
+                            <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+#This program demonstrates the use of int and float variables
+euros = 67.80
+print("I have", euros, "euros in my bank account")
+euros = 100
+print("Luck me! I now have", euros, "euros in my bank account")
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit3\app1.py"
+I have 67.8 euros in my bank account
+Luck me! I now have 100 euros in my bank account
+                        </pre>   
+                
+                  <p>Όπως βλέπουμε στο πιο πάνω πρόγραμμα, όχι μόνο οι
+                      μεταβλητές αλλά τιμή αλλά και είδος τιμής
+                      – πχ από δεκαδικό σε ακέραιο. </p> 
+                  
+                  <p>Για να μπορέσουμε να βρούμε ανά πάσα στιγμή το
+                      data type της μεταβλητής, μπορούμε να καλέσουμε
+                      την μέθοδο type( ), όπως δείχνει το πιο κάτω παράδειγμα:</p>
+                  
+                  
+                <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+#This program demonstrates the use of int and float variables
+#and how to find their types
+euros = 67.80
+print(type(euros))
+print("I have", euros, "euros in my bank account")
+euros = 100
+print(type(euros))
+print("Luck me! I now have", euros, "euros in my bank account")
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit3\app1.py"
+<class 'float'>
+I have 67.8 euros in my bank account
+<class 'int'>
+Luck me! I now have 100 euros in my bank account
+                        </pre>   
+                
+                  <p>Εκτός από int και float, η Python έχει επίσης str data type για να αποθηκεύει strings.</p>
+                  
+                            <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+#This program demonstrates the use of str data type
+first_name = "Michail"
+last_name = "Kassapoglou"
+print(type(first_name))
+print("Welcome Mr.", first_name, last_name)
+euros = 67.80
+print(type(euros))
+print("You have", euros, "euros in your bank account")
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit3\app1.py"
+<class 'str'>
+Welcome Mr. Michail Kassapoglou
+<class 'float'>
+You have 67.8 euros in your bank account
+                        </pre> 
+                
+                  <p>Από την σημερινή ενότητα κρατήστε το γεγονός ότι μια
+                      μεταβλητή είναι απλά ένα όνομα που αναφέρεται σε κάποιο
+                      είδος data μέσα στην μνήμη. Με αυτή την λογική, 
+                      μια μεταβλητή μπορεί κάλλιστα να αλλάξει από int σε str.</p>
+                  
+                  
+                                           <p><strong>App.py</strong></p>
+                <pre class="prettyprint">
+#This program demonstrates the change of data type
+#for the same variable
+first_name = "Michail"
+last_name = "Kassapoglou"
+print(type(first_name))
+print("Welcome Mr.", first_name, last_name)
+euros = 67.80
+print(type(euros))
+euros = "one hundred"
+print("You have", euros, "euros in your bank account")
+                        </pre>
+                
+                  <p><strong>Output</strong></p>
+                <pre class="prettyprint">
+[Running] python -u "c:\Users\tota\Desktop\PythonProjects\LearningPython_001\unit3\app1.py"
+<class 'str'>
+Welcome Mr. Michail Kassapoglou
+<class 'float'>
+You have one hundred euros in your bank account
+                        </pre> 
+                
+           
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="">
+
+                           
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό 
+                                  τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση 
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων Microsoft και Oracle 
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω συνεχώς 
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και εξειδικευμένες μεθόδους 
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.  
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
+                             <p>   Σας ευχαριστώ που επισκεφτήκατε την ιστοσελίδα μου.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+                
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+ 
+
+  
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
