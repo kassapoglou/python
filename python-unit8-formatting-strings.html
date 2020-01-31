@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Μαθαίνω Python</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Python"> 
+    <meta name="robots" content="index, follow">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="python_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150900548-1');
+</script>
+
+</head>
+<body class="single-blog-post">
+    <div class="page-header">
+           <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                              <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                 <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                 <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                  <!--  <li><a href="#">Register</a></li> -->
+                                <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                 </div>   <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/" rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                               
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 8 PYTHON - Formatting Strings </h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                              <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                  <!--  <img src="images/single-post.jpg" alt=""> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">31</div>
+                        <div class="month">Jan</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+                   
+
+                  
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+                   
+                </div><!-- .single-post-wrap -->
+                <p><h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ PYTHON</h3></p>
+
+<p>Είναι πολύ σημαντικό στην Python αλλά και γενικότερα 
+    στον προγραμματισμό να γνωρίζουμε πως μπορούμε 
+    να διαχειριστούμε πολλαπλά strings. Μπορεί να μην
+     βλέπετε άμεσα αυτή την ανάγκη, αλλά όπως αναλύουμε
+      την θεωρία στο σημερινό δωρεάν μάθημα Python, 
+      σίγουρα θα καταλάβετε την χρησιμότητα των έτοιμων
+       μεθόδων που μας προσφέρει η Python και σε ποιες 
+       περιπτώσεις μπορούν να χρησιμοποιηθούν.</p>
+
+<p>Ας ξεκινήσουμε με την πιο απλή μορφή διαχείρισης 
+    strings που είναι το <strong>concatenation</strong> - δηλαδή 
+    ο τρόπος να ενοποιούμε ένα ή και περισσότερα strings σε ένα
+     μεγαλύτερο string. Το σύμβολο που χρησιμοποιείται για 
+     αυτό το σκοπό είναι το σύμβολο ( + ). Όταν η Python 
+     βλέπει ότι και οι δύο όροι αριστερά και δεξιά του 
+     συμβόλου ( + ) είναι string μεταβλητές, δεν εκτελεί 
+     την πράξη της πρόσθεσης ανάμεσα στους δύο όρους 
+     αλλά ενοποιεί (ή πιο απλά κολλάει) το ένα string 
+     δίπλα στο άλλο. Ας δούμε ένα παράδειγμα.</p>
+
+     <p><strong>App.py</strong></p>
+     <pre class="prettyprint">
+first_name = "Michail"
+last_name = "Kassapoglou"
+full_name = first_name + " " + last_name
+print(full_name)
+             </pre>
+      
+  <p><strong>Output</strong></p>
+     <pre class="prettyprint">
+Michail Kassapoglou
+             </pre> 
+
+<p>Προσέξτε ότι έχουμε προσθέσει και ένα κενό ανάμεσα 
+    στις δύο μεταβλητές έτσι ώστε το αποτέλεσμα, αν 
+    και είναι ένα ενιαίο string, θα εμφανιστεί με κενό
+     ανάμεσα στο όνομα και το επίθετο.</p>
+
+<p>Έχουμε πολλά έτοιμα functions που μας προσφέρει η 
+    Python για να μπορέσουμε να διαχειριστούμε καλύτερα
+     τα strings. Άλλωστε αυτός είναι και ο λόγος που 
+     δημιούργησα αυτή την ενότητα. Όσο αφορά την έννοια
+      του function την γνωρίζετε ήδη αφού έχετε χρησιμοποιήσει την print( )
+       function αλλά και την format( ) στους αριθμούς. Η Python 
+       προσφέρει αντίστοιχα χρήσιμα functions και για την 
+       διαχείριση των strings. Ας δούμε μερικά από αυτά τα
+        functions και ας καταλάβουμε τι δυνατότητες μας προσφέρουν.</p>
+
+<p>Ο πιο εύκολος τρόπος να εισάγουμε ένα string σε οποιαδήποτε 
+    θέση μέσα σε ένα άλλο string είναι με την χρήση των <strong>f strings</strong>.</p>
+
+    <p><strong>App.py</strong></p>
+    <pre class="prettyprint">
+first = "Michail"
+last = "Kassapoglou"
+print( f"Your first name is {first }")
+print( f"Your last name is {last }")
+print(f"Your complete name is {first} {last}")
+            </pre>
+     
+ <p><strong>Output</strong></p>
+    <pre class="prettyprint">
+Your first name is Michail
+Your last name is Kassapoglou
+Your complete name is Michail Kassapoglou
+            </pre>
+
+<p>Ορίζουμε το μεταβλητό μέρος του string με τα<strong>{ }</strong> σύμβολα
+     και ορίζουμε την αρχή του string με το γράμμα <strong>f</strong>. 
+     Μέσα στα { } γράφουμε το όνομα της μεταβλητής που περιέχει την 
+     string τιμή. Είναι πολύ απλό από ότι βλέπετε και εσείς.</p>
+
+<p>Αυτός είναι ο μοντέρνος τρόπος που μας προσφέρει η έκδοση 
+    Python 3.6 και μετά. Υπάρχει όμως και ο παλιός κλασικός τρόπος
+     που ακόμα μπορούμε να χρησιμοποιήσουμε και έχει τις ρίζες του
+      στην C γλώσσα ο οποίος είναι ο εξής:</p>
+
+      <p><strong>App.py</strong></p>
+      <pre class="prettyprint">
+first = "Michail"
+last = "Kassapoglou"
+print( "Your first name is %s" % first)
+print( "Your last name is %s" % last)
+print(f"Your complete name is %s %s" % (first, last))
+              </pre>
+       
+   <p><strong>Output</strong></p>
+      <pre class="prettyprint">
+Your first name is Michail
+Your last name is Kassapoglou
+Your complete name is Michail Kassapoglou
+              </pre>
+
+<p>Εκεί όπου θα εισάγουμε την μεταβλητή γράφουμε το <strong>%s</strong>. 
+    Το γράμμα <strong>s</strong> μετά το σύμβολο <strong>%</strong> ενημερώνει την 
+    Python ότι 
+    θα εισάγουμε ένα string. Εάν για παράδειγμα είχαμε αριθμό 
+    αντί για string τότε θα γράφαμε <strong>%d</strong>. Αμέσως μετά γράφουμε το
+     σύμβολο % που υποδηλώνει ότι θα ακολουθήσει το όνομα της 
+     μεταβλητής. Στην τελευταία γραμμή όπου έχουμε εισαγωγή πολλαπλών 
+     strings, λόγω κανόνα πρέπει να βάλουμε τις μεταβλητές μέσα σε παρένθεση.</p>
+
+<p>Ένα άλλο σημαντικό στοιχείο που έχουν τα strings αν 
+    και δεν είναι ορατό άμεσα είναι ο αριθμός <strong>index</strong>. Για κάθε 
+    χαρακτήρα  ενός string η Python αναθέτει έναν αριθμό ξεκινώντας
+     από το 0. Οπότε το όνομα μου θα είχε την εξής αρίθμηση.</p>
+     <img src="python-unit8/python-unit8-1.JPG" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON" class="center">
+<p></p>
+
+<p>Για να διαβάσουμε τον χαρακτήρα που αντιστοιχεί σε μια συγκεκριμένη
+ index θέση, γράφουμε το όνομα της string μεταβλητής και αμέσως 
+ μετά μέσα σε [ ] τον αριθμό του index. Αν γράψουμε αρνητικό αριθμό
+  τότε διαβάζουμε το string από το τέλος. Προσέξτε με τον αριθμό 
+  του index. Αν ζητήσετε έναν αριθμό index μεγαλύτερο από εκείνο
+   του string τότε το πρόγραμμα σας θα σταματήσει να λειτουργεί 
+   γιατί πολύ απλά ζητάτε κάποιον χαρακτήρα στην μνήμη του υπολογιστή 
+   που δεν υπάρχει.</p>
+
+   <p><strong>App.py</strong></p>
+   <pre class="prettyprint">
+first = "Michail"
+print(first[2])
+print(first[-3])
+           </pre>
+    
+<p><strong>Output</strong></p>
+   <pre class="prettyprint">
+c
+a
+           </pre>
+<p>Αν και μας αρέσει η ιδιότητα του index που υπάρχει στα 
+    string, συνήθως δεν ζητάμε ένα μεμονωμένο χαρακτήρα αλλά 
+    ένα υποσύνολο του string. Για να καταφέρουμε να διαβάσουμε
+     ένα υποσύνολο του string χρησιμοποιούμε slicing.</p>
+
+     <p><strong>App.py</strong></p>
+     <pre class="prettyprint">
+first = "Michail"
+print(first[0:3])
+             </pre>
+      
+  <p><strong>Output</strong></p>
+     <pre class="prettyprint">
+Mic
+             </pre>
+<p>Ο πρώτος αριθμός δηλώνει το index από το οποίο θα 
+    αρχίζουμε να διαβάζουμε το string, ενώ ο δεύτερος αριθμός 
+    δηλώνει πόσα index στο σύνολο τους θα διαβάσουμε. Άρα η 
+    εξήγηση στο πιο πάνω κώδικα είναι: ξεκίνησε να διαβάζεις 
+    από το index 0 και διάβασε συνολικά τρία index. Υπάρχει και
+     μια τρίτη παράμετρος που είναι το <strong>step</strong> και δηλώνει ανά 
+     πόσους χαρακτήρες θα διαβάζουμε. Εάν δεν το δηλώσουμε τότε
+      εξ ορισμού διαβάζονται όλοι οι χαρακτήρες από την αρχή 
+      μέχρι το σύνολο που έχει οριστεί γιατί η αύξηση του αριθμού
+       index γίνεται κατά έναν αριθμό. Αν, για παράδειγμα δηλώσουμε
+        τον αριθμό 2 για step, τότε θα διαβάζονται οι χαρακτήρες 
+        που αντιστοιχούν ανά δύο index αριθμούς. Στο επόμενο 
+        παράδειγμα δηλώνουμε ότι θέλουμε να διαβάσουμε όλο το 
+        string αλλά ενδιαφερόμαστε μόνο για τους χαρακτήρες που
+         αντιστοιχούν σε κάθε δύο index αριθμούς.</p>
+
+         <p><strong>App.py</strong></p>
+         <pre class="prettyprint">
+first = "Michail"
+print(first[0:6:2])
+                 </pre>
+          
+      <p><strong>Output</strong></p>
+         <pre class="prettyprint">
+Mca
+                 </pre>
+
+<p>Πριν κλείσουμε την σημερινή δωρεάν ενότητα στην Python 
+    γλώσσα προγραμματισμού, ας δούμε μερικά ακόμα functions που 
+    μπορούμε να χρησιμοποιήσουμε.</p>
+
+<p>Το <strong>title( )</strong> είναι ένα function που 
+    μετατρέπει σε κεφαλαία τα πρώτα μόνο γράμματα σε κάθε λέξη 
+    που περιέχεται στο string.</p>
+
+    <p><strong>App.py</strong></p>
+    <pre class="prettyprint">
+name = "michail kassapoglou"
+print(name.title())
+            </pre>
+     
+ <p><strong>Output</strong></p>
+    <pre class="prettyprint">
+Michail Kassapoglou
+            </pre>
+<p>Η <strong>replace( )</strong> function αντικαθιστά χαρακτήρες 
+    σε ένα string. Δέχεται δύο παραμέτρους – η πρώτη είναι ο 
+    χαρακτήρας που ψάχνουμε να αντικαταστήσουμε και η δεύτερη 
+    παράμετρος είναι ο καινούργιος χαρακτήρας που επιθυμούμε να
+     εισάγουμε στο string ως αντικατάσταση του πρώτου.</p>
+     <p><strong>App.py</strong></p>
+     <pre class="prettyprint">
+name = "Michail Kassapogloy"
+print( name.replace( "y", "u" ) )
+             </pre>
+      
+  <p><strong>Output</strong></p>
+     <pre class="prettyprint">
+Michail Kassapoglou
+             </pre>
+<p>Με την function <strong>find( )</strong> μπορούμε να ψάξουμε για έναν 
+    ή περισσότερους χαρακτήρες σε ένα string. Το αποτέλεσμα 
+    είναι ένας αριθμός ο οποίος αντιπροσωπεύει τον index από
+     τον οποίο αρχίζει ο χαρακτήρας ή η λέξη που ψάχνουμε στο string.</p>
+     
+     <p><strong>App.py</strong></p>
+     <pre class="prettyprint">
+name = "Michail Kassapoglou"
+print( name.find("Kassapoglou") )
+             </pre>
+      
+  <p><strong>Output</strong></p>
+     <pre class="prettyprint">
+8
+             </pre>
+<p>Με την <strong>strip( )</strong> function μπορούμε να αφαιρέσουμε 
+    κενά από αριστερά και δεξιά ενός string ή χαρακτήρες που είναι στα 
+    άκρα του string. Συνήθως όμως το χρησιμοποιούμε για να αφαιρέσουμε 
+    τυχόν κενά που υπάρχουν ανάμεσα στα quotes ( “  ”) και τους χαρακτήρες.</p>
+    
+    <p><strong>App.py</strong></p>
+    <pre class="prettyprint">
+name = "  Michail Kassapoglou  "
+print( name.strip() )
+            </pre>
+     
+ <p><strong>Output</strong></p>
+    <pre class="prettyprint">
+Michail Kassapoglou
+            </pre>
+<p>Η τελευταία function που θα αναλύσουμε είναι η <strong>split( )</strong>
+     η οποία επιστρέφει μια λίστα με όλες τις λέξεις που περιέχονται σε
+      ένα string. Δεν πειράζει αν ακόμα δεν καταλαβαίνετε την έννοια της
+       λίστας. Θα μιλήσουμε για αυτήν σε μελλοντική ενότητα.</p>
+       
+       <p><strong>App.py</strong></p>
+       <pre class="prettyprint">
+name = "Michail Kassapoglou"
+print( name.split(" ") )
+               </pre>
+        
+    <p><strong>Output</strong></p>
+       <pre class="prettyprint">
+['Michail', 'Kassapoglou']
+               </pre>
+<p>Νομίζω πριν κλείσουμε την ενότητα, θα ήταν χρήσιμο να αναφερθούμε
+     στο πως μπορείτε να βρείτε από μόνοι σας όλες αυτές τις 
+     μεθόδους και ακόμα περισσότερες που δεν έχουμε αναφέρει 
+     εδώ. Αυτό που έχετε να κάνετε είναι να γράψετε το όνομα της
+      μεταβλητής που περιέχει μια string τιμή και να γράψετε την
+       τελεία. Αμέσως μετά θα εμφανιστεί μια λίστα με όλα τα 
+       functions που μπορείτε να εφαρμόσετε στο συγκεκριμένο string.
+        Αν η λίστα δεν εμφανιστεί αμέσως μπορείτε να 
+        πατήσετε <strong>Ctrl + Space Bar</strong> για να την εμφανίσετε.</p>
+
+        <img src="python-unit8/python-unit8-2.JPG" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON" class="center">
+
+    <p>Επίσης για κάθε ένα από τα functions υπάρχει μια γρήγορη επεξήγηση
+         της λειτουργίας της και της παραμέτρους που χρειάζεται για να
+          λειτουργήσει σωστά.</p>
+
+          <img src="python-unit8/python-unit8-3.JPG" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON" class="center">      
+
+          <a><a href="https://kassapoglou.github.io/python/python-programming.html"><font color="#0000CC">Πίσω στις ενότητες Python Programming</font> </a></a>
+          <!-- #####################################################-->
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+                           
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό 
+                                  τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση 
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων Microsoft και Oracle 
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω συνεχώς 
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και εξειδικευμένες μεθόδους 
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.  
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
+                             <p>   Σας ευχαριστώ που επισκεφτήκατε την ιστοσελίδα μου.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+                
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+ 
+
+  
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
