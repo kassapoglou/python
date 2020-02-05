@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Μαθαίνω Python</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Python"> 
+    <meta name="robots" content="index, follow">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="python_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150900548-1');
+</script>
+
+</head>
+<body class="single-blog-post">
+    <div class="page-header">
+           <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                              <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                 <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                 <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                  <!--  <li><a href="#">Register</a></li> -->
+                                <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                 </div>   <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/" rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                               
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 8 PYTHON - Formatting Strings </h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                              <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                  <!--  <img src="images/single-post.jpg" alt=""> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">31</div>
+                        <div class="month">Jan</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+                   
+
+                  
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+                   
+                </div><!-- .single-post-wrap -->
+                <p><h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ PYTHON</h3></p>
+                <img src="python-unit9/python.png" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON" class="center">
+                <p></p>
+<p>Όπως όλες οι γλώσσες προγραμματισμού, έτσι και η Python μας 
+δίνει την δυνατότητα να γράψουμε κώδικα που αποφασίζει από μόνο του για 
+την ροή εκτέλεσης του προγράμματος βασιζόμενο σε κάποιες συνθήκες. Στο 
+σημερινό δωρεάν μάθημα Python, θα αναλύσουμε την σύνταξη αλλά και την χρήση 
+των <strong>if-else statements</strong> αλλά και την χρησιμότητα των <strong>logical operators</strong>.</p>
+
+<p>Μέχρι τώρα, όλος ο Python κώδικας που γράφαμε, έτρεχε γραμμή 
+προς γραμμή από πάνω προς τα κάτω. Πολλές φορές όμως χρειαζόμαστε να 
+τρέξουμε ένα συγκεκριμένο γκρουπ γραμμών κώδικα ενώ ταυτόχρονα να παραβλέψουμε
+ κάποιο άλλο σημείο του κώδικα. Αυτή την επιλογή εκτέλεσης συγκεκριμένου 
+ κώδικα, όσο και η ικανότητα το πρόγραμμα μας να αποφασίζει από μόνο του, 
+ μπορεί να προστεθεί στην λογική του προγράμματος μας αν χρησιμοποιήσουμε 
+ <strong>control statements</strong> και ποιο συγκεκριμένα <strong>if</strong> και <strong>elif</strong>
+ statements. 
+ Ας δούμε ένα εύκολο παράδειγμα έτσι ώστε να μπορούμε να αναπτύξουμε 
+ την θεωρία μας καλύτερα.</p>
+
+ <p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = 5
+    y = 10
+    
+    if x < y:
+        print("x is less than y")
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    x is less than 
+         </pre> 
+
+<p>Κάθε if statement ξεκινάει με την λέξη κλειδί <strong>if</strong> και αμέσως μετά 
+ακολουθεί μια συνθήκη. Εάν η συνθήκη είναι True (στο παράδειγμά μας 
+είναι True γιατί το x είναι μικρότερο του y) τότε θα εκτελεστεί ο κώδικας 
+που ανήκει στο if, ειδάλλως, εάν η συνθήκη είναι False τότε θα αγνοηθεί 
+αυτό το μέρος του κώδικα. Όμως η ερώτηση που σίγουρα έχετε στο μυαλό σας 
+είναι “πως αναγνωρίζουμε τον κώδικα που ανήκει στο if”?</p>
+
+<p>Εδώ λοιπόν παίζει σημαντικό ρόλο το κενό που έχουμε αφήσει στην 
+γραμμή του print( ) πριν ξεκινήσουμε να γράφουμε τον κώδικα. Συνήθως το 
+κενό το δημιουργούμε με το tab έτσι ώστε αν γράψουμε πολλαπλές γραμμές 
+κώδικα κάτω από το if να είναι όλες στοιχισμένες και να ξεχωρίζουν πολύ 
+εύκολα και από τον προγραμματιστή αλλά και από τον compiler της Python. 
+Εάν δεν αφήσετε το κενό, τότε ο compiler της Python θα παραπονεθεί ότι δεν 
+αναγνωρίζει την εντολή και το πρόγραμμα μας δεν θα εκτελεστεί. Επίσης, μην 
+ξεχνάμε τα colons ( : ) μετά την συνθήκη που είναι μέρος του συντακτικού 
+του if statement.</p>
+
+<p>Ο κώδικας που μόλις είδαμε είναι η πιο απλή μορφή του if όπου είτε τρέχει 
+ένα κομμάτι κώδικα είτε όχι. Συνήθως όμως επιθυμούμε το πρόγραμμα μας να πρέπει 
+να επιλέξει  ανάμεσα σε πολλαπλές επιλογές και τελικά να δώσει μια τελική 
+ροή στην εκτέλεση του κώδικα. Αυτήν την δυνατότητα την αποκτάει το if 
+προσθέτοντας την λέξη κλειδί <strong>else</strong> όπως δείχνει 
+και το παρακάτω παράδειγμα.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    first = int(input("Enter the first number: "))
+    second = int(input("Enter the second number: "))
+    if first>second:
+        maximum = first
+        minimum = second
+    else:
+        maximum = second
+        minimum = first
+    print("Maximum: ",maximum)
+    print("Minimum: ",minimum)
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    Enter the first number: 10
+    Enter the second number: 20
+    Maximum:  20
+    Minimum:  10
+        </pre> 
+
+<p>Από τον ποιο πάνω κώδικα, περιμένουμε μια απάντηση από 
+την σύγκριση που κάνει ο if-else συνδυασμός στα δεδομένα που του 
+δώσαμε. Μπορούμε όμως να έχουμε και περισσότερες από μια επιλογές 
+απλά προσθέτοντας πολλαπλά if else. Μάλιστα η Python μας επιτρέπει 
+να γράφουμε αυτό τον συνδυασμό σαν elif για εξοικονόμηση κώδικα. 
+Για άλλη μια φορά τονίζω το κενό που πρέπει να αφήνουμε πριν ξεκινήσει 
+ο κώδικας κάτω από το αντίστοιχο if.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    number = int(input("Enter the numeric grade: "))
+    if number > 89:
+        letter = 'A'
+    elif number > 79:
+        letter = 'B'
+    elif number > 69:
+        letter = 'C'
+    else:
+        letter = 'F'
+    print("The letter grade is", letter)
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    Enter the numeric grade: 67
+    The letter grade is F
+        </pre> 
+
+<p>Στον παραπάνω κώδικα πρέπει να προσέξουμε την σημαντική χρήση 
+του τελευταίου else. Σαν λογική, το πρόγραμμα μας δεν ενδιαφέρεται 
+για όλους τους αριθμούς αλλά μόνο για εκείνους που είναι μεγαλύτεροι 
+από τον αριθμό 69. Για οποιονδήποτε άλλο αριθμό μικρότερο του 69 θα 
+αναθέτει το γράμμα F στην μεταβλητή letter. Με αυτό τον τρόπο δεν 
+αφήνουμε το πρόγραμμα να μας ξεφύγει από την λογική που θέλουμε να 
+υλοποιήσουμε αλλά ταυτόχρονα καλύπτουμε και όλες τις πιθανές 
+περιπτώσεις αριθμών.</p>
+
+<p>Πριν κλείσουμε αυτή την ενότητα θα ήθελα να αναφερθούμε 
+σε δύο ακόμα σημεία του κώδικα. Το πρώτο είναι τα σύμβολα 
+που χρησιμοποιούμε στην συνθήκη του if (ονομάζονται <strong>comparison operators</strong>) 
+αλλά και η δυνατότητα να συνδυάσουμε μια ή και περισσότερες συνθήκες 
+χρησιμοποιώντας <strong>Logical Operators</strong>.</p>
+
+<p><strong>Comparison operators</strong> ονομάζονται εκείνα τα σύμβολα 
+που μας επιτρέπουν να κάνουμε συγκρίσεις όπως εάν ένας αριθμός είναι 
+μεγαλύτερος από έναν άλλο ή ένας χαρακτήρας είναι αδιάφορος 
+(όχι ίσος) από έναν άλλο.</p>
+
+<img src="python-unit9/python-unit9-1.JPG" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON" class="center">
+<p></p>
+
+<p>Προσέξτε τον comparison operators όταν συγκρίνουμε για ισότητα σε μια 
+συνθήκη. Χρησιμοποιούμε διπλό σύμβολο ίσον ( == ) για την ισότητα γιατί εδώ 
+ψάχνουμε αλγεβρική ισότητα, ενώ το μόνο σύμβολο ( = ) όπως το χρησιμοποιούμε 
+στις μεταβλητές σημαίνει ανάθεση τιμής στην μεταβλητή.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    ans = int( input("What is 5 + 5? ") )
+    if ans == 10:
+        print("You got it right!")
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    What is 5 + 5? 10
+    You got it right!
+        </pre> 
+
+<p>Το δεύτερο σημείο στο οποίο πρέπει να αναφερθούμε είπαμε ότι είναι 
+οι logical operators. Με τα logical operators μπορούμε να συνδυάσουμε 
+περισσότερες από μια συνθήκη στα conditional statements. </p>
+
+<p>Υπάρχουν τρία logical operators που μας διαθέτει η 
+Python: <strong>and</strong>, <strong>or</strong>, <strong>not</strong>. 
+Ας δούμε ένα παράδειγμα για το κάθε ένα logical operator για να δείτε 
+πως ακριβώς μπορούν να χρησιμοποιηθούν. Σαν μια γρήγορη επεξήγηση, 
+σε περίπτωση που δεν το γνωρίζετε, το <strong>and</strong> απαιτεί και οι δύο όροι 
+του να είναι True για να επιστρέψει True, το <strong>or</strong> απλά ζητάει ένας 
+από τους δύο όρους του τουλάχιστον να είναι True για να μας επιστρέψει True, 
+και τέλος το <strong>not</strong> απλά αντιστρέφει την απάντηση πχ. από True σε False.</p>
+
+<p>Στο παρακάτω παράδειγμα, θα πρέπει και οι δύο συνθήκες να είναι 
+True για να εμφανιστεί το μήνυμα.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    x, y, z = 5, 10, 5
+    if x < y and x == z:
+        print("Both statements were true")
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    Both statements were true
+        </pre> 
+
+<p>Στον παρακάτω κώδικα, ζητάμε μια από τις δύο συνθήκες τουλάχιστον να είναι True.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    x, y, z = 5, 10, 5
+    if x < y or x != z:
+        print("One or both statements were true")
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    One or both statements were true
+        </pre> 
+
+<p>Εδώ ζητάμε την αντίστροφη κατάσταση από εκείνη στην οποία βρίσκεται η boolean μεταβλητή.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    flag = False
+    if not flag:
+        print("Flag is False")
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    Flag is False
+        </pre> 
+
+<p>Ένας καταπληκτικός συνδυασμός που συνήθως βλέπουμε σε κώδικα 
+και μας λύνει τα χέρια σε πάρα πολλές συνθήκες που θέλουμε να ελέγξουμε 
+είναι οι membership operators <strong>in</strong> και <strong>not in</strong>. 
+Όπως καταλαβαίνετε και από το όνομα, οι membership operators μας βοηθούν 
+να ελέγξουμε εάν μια γραμματοσειρά ή ένας αριθμός ανήκουν σε μια μεγαλύτερη 
+κατηγορία κειμένου ή ένα γκρουπ από αριθμούς.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    word = "Baseball"
+    if "b" in word:
+        print( f"{word } contains the character b")
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    Baseball contains the character b
+        </pre> 
+
+<p>Ας δούμε λοιπόν ένα τελικό πρόγραμμα που περιέχει όλα όσα καλύψαμε 
+στο σημερινό δωρεάν μάθημα Python. Στον κώδικα που ακολουθεί προσπαθούμε 
+να γράψουμε σε Python την λογική μιας αίτησης για δάνειο. Αν ο ενδιαφερόμενος 
+έχει μισθό μεγαλύτερο από 20000 ευρώ ταυτόχρονα είναι περισσότερα από δύο 
+χρόνια στην ίδια εργασία τότε θα μπορεί να εγκριθεί για το δάνειο.</p>
+
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+    MIN_SALARY = 30000
+    MIN_YEARS = 2
+    
+    salary = float(input('Enter your annual salary: '))
+    years_on_job = int(input('Enter the number of years employed: '))
+    
+    if salary >= MIN_SALARY or years_on_job >= MIN_YEARS:
+        print('You qualify for the loan.')
+    else:
+        print('You do not qualify for this loan.')
+        </pre>
+ 
+<p><strong>Output</strong></p>
+<pre class="prettyprint">
+    Enter your annual salary: 31000
+    Enter the number of years employed: 3
+    You qualify for the loan.
+        </pre> 
+
+
+          <a><a href="https://kassapoglou.github.io/python/python-programming.html"><font color="#0000CC">Πίσω στις ενότητες Python Programming</font> </a></a>
+          <!-- #####################################################-->
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+                           
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό 
+                                  τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση 
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων Microsoft και Oracle 
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω συνεχώς 
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και εξειδικευμένες μεθόδους 
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.  
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
+                             <p>   Σας ευχαριστώ που επισκεφτήκατε την ιστοσελίδα μου.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+                
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+ 
+
+  
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
