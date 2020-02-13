@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Μαθαίνω Python</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Python"> 
+    <meta name="robots" content="index, follow">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="css/elegant-fonts.css">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="python_style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150900548-1');
+</script>
+
+</head>
+<body class="single-blog-post">
+    <div class="page-header">
+           <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                            <div class="header-bar-email d-flex align-items-center">
+                                <i class="fa fa-envelope"></i><a href="#">michail.kassapoglou@gmail.com</a>
+                            </div><!-- .header-bar-email -->
+
+                            <div class="header-bar-text lg-flex align-items-center">
+                              <!--  <p><i class="fa fa-phone"></i>001-1234-88888 </p> -->
+                            </div><!-- .header-bar-text -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-search">
+                                <form class="flex align-items-stretch">
+                                 <!--   <input type="search" placeholder="What would you like to learn?"> -->
+                                 <!--   <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button> -->
+                                </form>
+                            </div><!-- .header-bar-search -->
+
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                  <!--  <li><a href="#">Register</a></li> -->
+                                <!--    <li><a href="#">Login</a></li> -->
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                 </div>   <!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+
+            <div class="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-9 col-lg-3">
+                            <div class="site-branding">
+                                <h1 class="site-title"><a href="https://kassapoglou.github.io/main/" rel="home">Kassa<span>poglou</span></a></h1>
+                            </div><!-- .site-branding -->
+                        </div><!-- .col -->
+
+                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                            <nav class="site-navigation flex justify-content-end align-items-center">
+                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main">Home</a></li>
+                                    <li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+                                </ul>
+
+                                <div class="hamburger-menu d-lg-none">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div><!-- .hamburger-menu -->
+
+                               
+                            </nav><!-- .site-navigation -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .nav-bar -->
+        </header><!-- .site-header -->
+
+        <div class="page-header-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="entry-header">
+                            <h1 class="entry-title">ΕΝΟΤΗΤΑ 12 PYTHON - Lists and Tuples (Part 1)</h1>
+
+                            <div class="entry-meta flex justify-content-center align-items-center">
+                                <div class="post-author"><a href="#">Michail Kassapoglou </a></div>
+
+                              <!--  <div class="post-comments"><a href="#">02 Comments</a></div> -->
+                            </div><!-- .entry-meta -->
+                        </header><!-- .entry-header -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .page-header-overlay -->
+    </div><!-- .page-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="featured-image">
+                  <!--  <img src="images/single-post.jpg" alt=""> -->
+
+                    <div class="posted-date position-absolute">
+                        <div class="day">13</div>
+                        <div class="month">Feb</div>
+                    </div><!-- .posted-date -->
+                </div><!-- .featured-image -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12 offset-lg-1 col-lg-1" style="height:0">
+                <div class="post-share">
+                   
+
+                  
+                </div><!-- .post-share -->
+            </div><!-- .col -->
+
+            <div class="col-12 col-lg-12">
+                <div class="single-post-wrap">
+                   
+                </div><!-- .single-post-wrap -->
+                <p><h3>ΔΩΡΕΑΝ ΜΑΘΗΜΑΤΑ PYTHON</h3></p>
+                <img src="python-unit9/python.png" alt="Δωρεάν Μαθήματα και Σεμινάρια PYTHON" class="center">
+                <p></p>
+
+<p>Από το σημερινό δωρεάν μάθημα Python, θα ξεκινήσουμε μια ανάλυση 
+στο πως η Python ομαδοποιεί πολλά στοιχεία μαζί κάτω από ένα όνομα, ποιες επιλογές 
+έχουμε για να αποθηκεύσουμε αυτά τα δεδομένα και ποιες είναι οι διαφορές ανάμεσα τους. 
+Στο σημερινό δωρεάν μάθημα προγραμματισμού Python θα αναλύσουμε την πρώτη επιλογή που 
+μας προσφέρει η Python και ονομάζεται <strong>list</strong>.</p>
+
+<p> Το list είναι ένα αντικείμενο το οποίο περιέχει πολλά στοιχεία δεδομένων. 
+Ένα list είναι δυναμικό και μεταβλητό που σημαίνει ότι κατά την διάρκεια εκτέλεσης 
+ενός προγράμματος μπορούμε να προσθέσουμε ή να αφαιρέσουμε στοιχεία από το list 
+οπότε το μέγεθος του όπως και το περιεχόμενο του μπορεί να αλλάξει. Για αυτό 
+άλλωστε λέμε ότι τα list είναι mutable δηλαδή επιτρέπουν αλλαγές στο περιεχόμενο 
+τους. Σε άλλες γλώσσες προγραμματισμού, μπορείτε να βρείτε την αντίστοιχη 
+λειτουργία του list σαν array. </p>
+
+<p>Ο ορισμός του list είναι πολύ απλός: μέσα σε αγκύλες ( [ ] ) γράφουμε την λίστα 
+με την δεδομένα που θέλουμε χωρισμένα ανάμεσα τους με κόμμα.</p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = [ 1, 2, 3]
+    print(x)
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    [1, 2, 3]
+         </pre> 
+
+<p>Σε αυτό το παράδειγμα, η μεταβλητή x ισούται με ένα list που 
+περιέχει τους αριθμούς 1, 2, και 3. Μην ανησυχείτε αν δεν είσαστε 
+σίγουροι για το αρχικό μέγεθος του list και δεν γνωρίζετε όλα τα δεδομένα. 
+Η λίστα μπορεί αμέσως μετά την δήλωση της να μεγαλώσει η να μικρύνει 
+δυναμικά ανάλογα με τις ανάγκες του προγράμματός μας.</p>
+
+<p>Δεν θα ήθελα να συνεχίσω να συγκρίνω το list της Python με κάτι 
+αντίστοιχο από άλλες γλώσσες προγραμματισμού γιατί πολύ απλά το list 
+της Python είναι πολύ πιο ευέλικτο. Για παράδειγμα, ενώ σε άλλες γλώσσες 
+προγραμματισμού δεν επιτρέπεται τα στοιχεία να διαφέρουν μεταξύ τους 
+όσο αφορά το data type, η Python το καλωσορίζει. </p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = [5, “six”, [1,2,3]]
+    print(x)
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    [5, 'six', [1, 2, 3]]
+         </pre>
+
+<p>Ένα από τα πιο χρήσιμα functions που μας προσφέρει η Python είναι η <strong>len( )</strong>
+που μας επιστρέφει τον αριθμό των στοιχείων ( ή elements όπως ονομάζονται) που 
+περιέχει ένα list.</p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = [3, 5, 7, 9]
+    print(len(x))
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    4
+         </pre>
+
+<p>Τώρα που έχουμε εξοικειωθεί με τις λίστες, μπορούμε να προχωρήσουμε 
+και στο επόμενο βήμα που είναι το πως διαβάζουμε συγκεκριμένα elements 
+από την λίστα ή και ακόμα πως τα αλλάζουμε. Όπως και στα strings έτσι 
+και στα list υπάρχει ένας index αριθμός ο οποίος ξεκινάει το μέτρημα από 
+τον αριθμό μηδέν ( 0 ). Όπως μεγαλώνει η list έτσι μεγαλώνει και η αρίθμηση 
+του index. Για να αποκτήσουμε πρόσβαση σε οποιοδήποτε element του list 
+δεν έχουμε παρά να γράψουμε το όνομα του list και αμέσως μετά μέσα σε 
+αγκύλες τον αριθμό του index. Προσέξτε γιατί ο αριθμός του index είναι -1 
+θέση πίσω από την κανονική αρίθμηση.</p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = ["one", "two", "three", "four", "five"]
+    print(x[4])
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    five
+         </pre>
+
+<p>Στην Python επιτρέπεται επίσης να μπορούμε να μετράμε από το τέλος του 
+list προς την αρχή. Ο αριθμός -1 μας δίνει πρόσβαση στο τελευταίο element 
+του list, ο αριθμός -2 μας δίνει πρόσβαση στον προτελευταίο αριθμό του list κτλ.</p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = ["one", "two", "three", "four", "five"]
+    print(x[4])
+    print(x[-1])
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    five
+    five
+         </pre>
+
+<p>Όπως έχετε ήδη καταλάβει, η Python είναι αρκετά ευέλικτη και με πλούσια 
+βιβλιοθήκη όσο αφορά τις δυνατότητες της με λίστες και γενικότερα με 
+ομαδοποιήσεις δεδομένων. Μια από τις επιπλέον δυνατότητες που μας προσφέρει 
+σε σύγκριση με άλλες γλώσσες προγραμματισμού είναι ότι αν θέλουμε να 
+αποκτήσουμε πρόσβαση σε μια ομάδα από elements, αντί να ορίζουμε κάθε 
+φορά list[index] για κάθε ένα από αυτά, μπορούμε να ορίσουμε το εύρος 
+των index για το οποίο θέλουμε να διαβάσουμε. Το γενικό συντακτικό είναι 
+list[index1 : index2] που δηλώνει ότι θα διαβάσουμε όλα τα elements ξεκινώντας 
+από τον index1 αριθμό μέχρι τον index2 χωρίς όμως να συμπεριλαμβάνει τον index2. 
+Οπότε αν προσέξτε λιγάκι με το εύρος των αριθμών που ζητάτε, όπως επίσης ότι 
+υπάρχει το colon ( : ) ανάμεσα στα δύο indexes.</p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = ["one", "two", "three", "four", "five"]
+    print(x[0:2])
+    print(x[1:3])
+    print(x[1:-1])
+    print(x[-2:-1])
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    ['one', 'two']
+    ['two', 'three']
+    ['two', 'three', 'four']
+    ['four']
+         </pre>
+
+<p>Μπορούμε επίσης να χρησιμοποιήσουμε μόνο ένα από τα δύο indexes. 
+Αφήνοντας το index1 σημαίνει ότι επιθυμούμε να ξεκινήσουμε από την αρχή του 
+list, ενώ αφήνοντας έξω το index2 σημαίνει ότι επιθυμούμε να φτάσουμε μέχρι 
+το τέλος της λίστας.</p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = ["one", "two", "three", "four", "five"]
+    print(x[:3])
+    print(x[2:])
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    ['one', 'two', 'three']
+    ['three', 'four', 'five']
+         </pre>
+
+<p>Αν παραλείψουμε και τα δύο indexes τότε στην ουσία ζητάμε να διαβάσουμε 
+την list από την αρχή μέχρι το τέλος. Συνήθως ακολουθούμε αυτή την τακτική 
+όταν θέλουμε να δημιουργήσουμε ένα αντίγραφο του list έτσι ώστε να επηρεάσουμε 
+τα δεδομένα στο δεύτερο list χωρίς να αλλοιώσουμε τα δεδομένα του πρώτου.</p>
+
+<p><strong>App.py</strong></p>
+ <pre class="prettyprint">
+    x = ["one", "two", "three", "four", "five"]
+    y = x[:]
+    y[0] = "first"
+    
+    print(x[:])
+    print(y[:])
+         </pre>
+  
+<p><strong>Output</strong></p>
+ <pre class="prettyprint">
+    ['one', 'two', 'three', 'four', 'five']
+    ['first', 'two', 'three', 'four', 'five']
+         </pre>
+
+
+ 
+
+
+          <a><a href="https://kassapoglou.github.io/python/python-programming.html"><font color="#0000CC">Πίσω στις ενότητες Python Programming</font> </a></a>
+          <!-- #####################################################-->
+
+                <div class="author-box">
+                    <div class="author-info flex flex-wrap">
+                        <div class="author-avatar">
+                            <img src="images/michail.jpg" alt="Michail Kassapoglou">
+
+                           
+                        </div><!-- .author-avatar -->
+
+                        <div class="author-details">
+                            <h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
+
+                            <div class="entry-content mt-3">
+                                <p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω με τον ποιο απλό 
+                                  τρόπο να προγραμματίζετε σε Python. Ασχολούμαι με την τεχνική εκπαίδευση 
+                                    σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
+                                    πάνω από 20 έτη. Κατέχω έναν αρκετά μεγάλο αριθμό πιστοποιήσεων Microsoft και Oracle 
+                                    και σαν Τraining Lead στην Intrasoft έχω την δυνατότητα να αναβαθμίζω συνεχώς 
+                                    τις γνώσεις μου και να έχω άμεση επαφή με αληθινά projects και εξειδικευμένες μεθόδους 
+                                    ανάπτυξης εφαρμογών που έχουν υψηλές απαιτήσεις.  
+                                    Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
+                                    στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
+                             <p>   Σας ευχαριστώ που επισκεφτήκατε την ιστοσελίδα μου.</p>
+                            </div><!-- .entry-content -->
+                        </div><!-- .author-details -->
+                    </div><!-- .author-info -->
+                </div><!-- .author-box -->
+
+                
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+ 
+
+  
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/swiper.min.js'></script>
+    <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+    <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
