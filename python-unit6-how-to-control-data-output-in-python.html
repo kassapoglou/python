@@ -146,7 +146,7 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ PYTHON</strong></h1>
-										<h2><strong>ΕΝΟΤΗΤΑ 6 - How to Control Data Output</strong></h2>
+										<h2><strong>ΕΝΟΤΗΤΑ 6 - HOW TO CONTROL DATA OUTPUT</strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
@@ -183,7 +183,7 @@
 														</center>
 										<h3 align="center"><a
 											
-												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 6 PYTHON - How to Control Data Output</a></h3>
+												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 6 PYTHON -HOW TO CONTROL DATA OUTPUT</a></h3>
    <p>Μέχρι τώρα έχουμε δει πως να εκτυπώνουμε μηνύματα στην οθόνη μας 
                     με την χρήση της print( ) function. Όμως θα θέλαμε
                     να είχαμε λίγο καλύτερο έλεγχο στο τελικό αποτέλεσμα.
@@ -196,6 +196,7 @@
                 
                  <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print("Monday")
 print("Tuesday")
 print("Wednesday")
@@ -203,10 +204,11 @@ print("Thursday")
 print("Friday")
 print("Saturday")
 print("Sunday")
-                        </pre>
+                     </xmp>   </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 Monday
 Tuesday
 Wednesday
@@ -214,7 +216,7 @@ Thursday
 Friday
 Saturday
 Sunday
-                        </pre>                
+                     </xmp>   </pre>                
                 
                 
       
@@ -229,7 +231,7 @@ Sunday
       
       <p>Αν δεν επιθυμούμε αυτή την συμπεριφορά της print function, 
           μπορούμε να προσθέσουμε μια ειδική παράμετρο,
-          που ονομάζεται end, μέσα στην print function 
+          που ονομάζεται <strong>end</strong>, μέσα στην print function 
           όπως δείχνει το πιο κάτω παράδειγμα, που ακυρώνει
           την προθαροσμένη συμπεριφορά και την αντικαταστεί
           με το κενό που ορίζεται από το διάστημα που υπάρχει 
@@ -237,6 +239,7 @@ Sunday
       
        <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print("Monday", end='  ')
 print("Tuesday", end='  ')
 print("Wednesday", end='  ')
@@ -244,12 +247,13 @@ print("Thursday", end='  ')
 print("Friday", end='  ')
 print("Saturday", end='  ')
 print("Sunday", end='  ')
-                        </pre>
+                     </xmp>   </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 Monday Tuesday Wednesday Thursday Friday Saturday Sunday
-                        </pre>   
+                    </xmp>    </pre>   
                 
       <p>Αν δεν αφήσουμε κενό ανάμεσα στα single quotes τότε 
           ζητάμε να μην υπάρχει κενό ανάμεσα στις λέξεις οπότε θα κολλήσουν 
@@ -257,6 +261,7 @@ Monday Tuesday Wednesday Thursday Friday Saturday Sunday
       
     <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print("Monday", end='')
 print("Tuesday", end='')
 print("Wednesday", end='')
@@ -264,12 +269,13 @@ print("Thursday", end='')
 print("Friday", end='')
 print("Saturday", end='')
 print("Sunday", end='')
-                        </pre>
+                    </xmp>    </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 MondayTuesdayWednesdayThursdayFridaySaturdaySunday
-                        </pre>      
+                     </xmp>   </pre>      
                 
       
       <p>Όταν προσθέτουμε πολλαπλές παραμέτρους στην print( ) 
@@ -278,30 +284,34 @@ MondayTuesdayWednesdayThursdayFridaySaturdaySunday
       
         <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')
-                        </pre>
+                     </xmp>   </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 Monday Tuesday Wednesday Thursday Friday Saturday Sunday
-                        </pre>      
+                     </xmp>   </pre>      
                 
                 
       <p>Εάν δεν επιθυμούμε αυτή την προκαθορισμένη συμπεριφορά, 
           τότε μπορούμε να την αναιρέσουμε προσθέτοντας την
-          παράμετρο sep=’ ’. Η λογική είναι η ίδια όπως και
+          παράμετρο <strong>sep=’ ’</strong>. Η λογική είναι η ίδια όπως και
           με το end. Αν δεν αφήσουμε κενό ανάμεσα στα single 
           quotes τότε το αποτέλεσμα θα είναι τιμές χωρίς κενό ανάμεσα τους. </p> 
       
       <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', sep='')
-                        </pre>
+                   </xmp>     </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 MondayTuesdayWednesdayThursdayFridaySaturdaySunday
-                        </pre>  
+                   </xmp>    </pre>  
       
       
       <p>Ο κύριος λόγος όμως που ίσως χρειαστούμε το sep δεν είναι 
@@ -311,18 +321,20 @@ MondayTuesdayWednesdayThursdayFridaySaturdaySunday
       
        <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', sep=' * ')
-                        </pre>
+                     </xmp>   </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 Monday * Tuesday * Wednesday * Thursday * Friday * Saturday * Sunday
-                        </pre>  
+                     </xmp>   </pre>  
       
       
       <p>Μπορούμε επίσης να καθορίσουμε το πως θα εμφανίζονται 
-          τα μηνύματα μας στην οθόνη, χρησιμοποιώντας escape
-          characters. Τα escape characters είναι ειδικοί χαρακτήρες
+          τα μηνύματα μας στην οθόνη, χρησιμοποιώντας <strong>escape
+          characters</strong>. Τα escape characters είναι ειδικοί χαρακτήρες
           που δεν εμφανίζονται στο output, αρχίζουν με το backslash
            σύμβολο ( \ ) και μετά ένα συγκεκριμένο χαρακτήρα από την 
           λίστα που δείχνει ο πιο κάτω πίνακας.</p>
@@ -342,14 +354,16 @@ Monday * Tuesday * Wednesday * Thursday * Friday * Saturday * Sunday
       
                  <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
-print('Monday\tTuesday\tWednesday\nThursday\tFriday\tSaturday\tSunday')
-                        </pre>
+				<xmp>
+print('Monday\t', 'Tuesday\t', 'Wednesday\n', 'Thursday\t', 'Friday\t', 'Saturday\t', 'Sunday')
+                      </xmp>  </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
-Monday  Tuesday Wednesday
-Thursday        Friday  Saturday        Sunday
-                        </pre>  
+				<xmp>
+Monday	 Tuesday	 Wednesday
+ Thursday	 Friday	 Saturday	 Sunday
+                   </xmp>     </pre>  
                 
                 
       <p>Το πόσο χρήσιμα είναι τα escape characters το 
@@ -360,13 +374,15 @@ Thursday        Friday  Saturday        Sunday
       
        <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print("You can find the log file at C:\\logs\\errors")
-                        </pre>
+                     </xmp>   </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 You can find the log file at C:\logs\errors
-                        </pre>  
+                     </xmp>   </pre>  
       
       <p>Τέλος, ας μην ξεχνάμε και την χρήση του + operator που το 
           έχουμε ήδη χρησιμοποιήσει για να προσθέσουμε
@@ -381,14 +397,16 @@ You can find the log file at C:\logs\errors
       
        <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print("Monday Tuesday Wednesday " +
       "Thursday Friday Saturday Sunday")
-                        </pre>
+                     </xmp>   </pre>
                 
       <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 Monday Tuesday Wednesday Thursday Friday Saturday Sunday
-                        </pre> 
+                     </xmp>   </pre> 
                 
                 
   
