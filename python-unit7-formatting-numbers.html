@@ -146,7 +146,7 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ PYTHON</strong></h1>
-										<h2><strong>ΕΝΟΤΗΤΑ 7 - Formatting Numbers</strong></h2>
+										<h2><strong>ΕΝΟΤΗΤΑ 7 - FORMATTING NUMBERS</strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
@@ -183,7 +183,7 @@
 														</center>
 										<h3 align="center"><a
 											
-												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 7 PYTHON - Formatting Numbers</a></h3>
+												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 7 PYTHON - FORMATTING NUMBERS</a></h3>
    <p>Αν και ασχοληθήκαμε στην προηγούμενη ενότητα με το πως να 
                     οργανώνουμε λίγο καλύτερα το output από τα print functions,
                      δεν καλύψαμε για το πως να δίνουμε μια καλύτερη μορφή
@@ -199,21 +199,23 @@
                 
                  <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 amount_due = 1000.00
 montly_payment = amount_due / 12.0
 print("The montly payment is", montly_payment)
-                        </pre>
+                       </xmp> </pre>
                  
              <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 The montly payment is 83.33333333333333
-                        </pre>       
+                     </xmp>   </pre>       
              
              <p>Στο πιο πάνω παράδειγμα, συνήθως επιθυμούμε
                  να στρογγυλοποιήσουμε τον αριθμό στα δύο δεκαδικά ψηφία.
                  Αν δεν το κάνουμε, τότε η Python θα μας δείχνει μέχρι και
                  δώδεκα ψηφία μετά την υποδιαστολή. Η Python όμως μας προσφέρει
-                 την function format που έχει την δυνατότητα να μορφοποιεί
+                 την function <strong>format( )</strong> που έχει την δυνατότητα να μορφοποιεί
                  το αποτέλεσμα με βάση τον ορισμό που θα της δώσουμε αφού 
                  τις περάσουμε δύο παραμέτρους:</p>
              
@@ -234,29 +236,33 @@ The montly payment is 83.33333333333333
             
              <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 amount_due = 123456789.456
 print("The montly payment is", format(amount_due, ',.2f'))
-                        </pre>
+                     </xmp>   </pre>
                  
              <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 The montly payment is 123,456,789.46
-                        </pre>     
+                     </xmp>   </pre>     
              
              <p>Αν θέλουμε να βάλουμε μαζί όσα μάθαμε στην προηγούμενη 
                  ενότητα και στην σημερινή τότε θα είχαμε τον εξής κώδικα: </p>
              
              <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 monthly_pay = 2500.0
 annual_pay = monthly_pay * 12
 print('Your annual_pay is \u20AC', format(annual_pay, ',.2f'), sep='')
-                        </pre>
+                     </xmp>   </pre>
                  
              <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 Your annual_pay is €30,000.00
-                        </pre>  
+                     </xmp>   </pre>  
              
              <p>Παρατηρήστε ότι έχουμε προσθέσει στο τέλος 
                  του print το sep=’’ έτσι ώστε να μην υπάρχει
@@ -269,13 +275,15 @@ Your annual_pay is €30,000.00
 
  <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print(format(0.5, '.0%'))
-                        </pre>
+                     </xmp>   </pre>
                  
              <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 50%
-                        </pre>  
+                     </xmp>   </pre>  
 
              <p>Τέλος, υπάρχει και η <strong> d </strong>επιλογή με την οποία 
                  ενημερώνουμε την format function ότι αντί για float θα
@@ -284,13 +292,15 @@ print(format(0.5, '.0%'))
              
              <p><strong>App.py</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 print(format(123456, ',d'))
-                        </pre>
+                  </xmp>      </pre>
                  
              <p><strong>Output</strong></p>
                 <pre class="prettyprint">
+				<xmp>
 123,456
-                        </pre>  
+                     </xmp>   </pre>  
 
              <p>Πριν κλείσουμε αυτή την ενότητα, θα ήταν καλό και
                  να αναφερθούμε και στις μεταβλητές εκείνες που δεν
