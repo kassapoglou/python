@@ -146,7 +146,7 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ PYTHON</strong></h1>
-										<h2><strong>ΕΝΟΤΗΤΑ 8 - Formatting Strings</strong></h2>
+										<h2><strong>ΕΝΟΤΗΤΑ 8 - FORMATTING STRINGS</strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
@@ -183,7 +183,7 @@
 														</center>
 										<h3 align="center"><a
 											
-												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 8 PYTHON - Formatting Strings</a></h3>
+												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 8 PYTHON - FORMATTING STRINGS</a></h3>
    <p>Είναι πολύ σημαντικό στην Python αλλά και γενικότερα 
     στον προγραμματισμό να γνωρίζουμε πως μπορούμε 
     να διαχειριστούμε πολλαπλά strings. Μπορεί να μην
@@ -193,7 +193,7 @@
        μεθόδων που μας προσφέρει η Python και σε ποιες 
        περιπτώσεις μπορούν να χρησιμοποιηθούν.
     Στο σημερινό δωρεάν μάθημα Python θα δούμε τι έννοια του concatenation όπως και 
-κάποια functions που θα δίνει η Python για να λάβουμε συγκεκριμένες πληροφορίες μέσα από ένα string</p>
+κάποια functions που μας δίνει η Python για να λάβουμε συγκεκριμένες πληροφορίες μέσα από ένα string</p>
 
 <p>Ας ξεκινήσουμε με την πιο απλή μορφή διαχείρισης 
     strings που είναι το <strong>concatenation</strong> - δηλαδή 
@@ -208,16 +208,18 @@
 
      <p><strong>App.py</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 first_name = "Michail"
 last_name = "Kassapoglou"
 full_name = first_name + " " + last_name
 print(full_name)
-             </pre>
+           </xmp>  </pre>
       
   <p><strong>Output</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 Michail Kassapoglou
-             </pre> 
+          </xmp>   </pre> 
 
 <p>Προσέξτε ότι έχουμε προσθέσει και ένα κενό ανάμεσα 
     στις δύο μεταβλητές έτσι ώστε το αποτέλεσμα, αν 
@@ -226,8 +228,8 @@ Michail Kassapoglou
 
 <p>Έχουμε πολλά έτοιμα functions που μας προσφέρει η 
     Python για να μπορέσουμε να διαχειριστούμε καλύτερα
-     τα strings. Άλλωστε αυτός είναι και ο λόγος που 
-     δημιούργησα αυτή την ενότητα. Όσο αφορά την έννοια
+     τα strings. Άλλωστε αυτός είναι και ο λόγος 
+     δημιουργίας αυτής της ενότητας. Όσο αφορά την έννοια
       του function την γνωρίζετε ήδη αφού έχετε χρησιμοποιήσει την print( )
        function αλλά και την format( ) στους αριθμούς. Η Python 
        προσφέρει αντίστοιχα χρήσιμα functions και για την 
@@ -239,19 +241,21 @@ Michail Kassapoglou
 
     <p><strong>App.py</strong></p>
     <pre class="prettyprint">
+	<xmp>
 first = "Michail"
 last = "Kassapoglou"
 print( f"Your first name is {first }")
 print( f"Your last name is {last }")
 print(f"Your complete name is {first} {last}")
-            </pre>
+         </xmp>   </pre>
      
  <p><strong>Output</strong></p>
     <pre class="prettyprint">
+	<xmp>
 Your first name is Michail
 Your last name is Kassapoglou
 Your complete name is Michail Kassapoglou
-            </pre>
+        </xmp>    </pre>
 
 <p>Ορίζουμε το μεταβλητό μέρος του string με τα<strong>{ }</strong> σύμβολα
      και ορίζουμε την αρχή του string με το γράμμα <strong>f</strong>. 
@@ -265,19 +269,21 @@ Your complete name is Michail Kassapoglou
 
       <p><strong>App.py</strong></p>
       <pre class="prettyprint">
+	  <xmp>
 first = "Michail"
 last = "Kassapoglou"
 print( "Your first name is %s" % first)
 print( "Your last name is %s" % last)
 print(f"Your complete name is %s %s" % (first, last))
-              </pre>
+           </xmp>   </pre>
        
    <p><strong>Output</strong></p>
       <pre class="prettyprint">
+	  <xmp>
 Your first name is Michail
 Your last name is Kassapoglou
 Your complete name is Michail Kassapoglou
-              </pre>
+          </xmp>    </pre>
 
 <p>Εκεί όπου θα εισάγουμε την μεταβλητή γράφουμε το <strong>%s</strong>. 
     Το γράμμα <strong>s</strong> μετά το σύμβολο <strong>%</strong> ενημερώνει την 
@@ -306,16 +312,18 @@ Your complete name is Michail Kassapoglou
 
    <p><strong>App.py</strong></p>
    <pre class="prettyprint">
+   <xmp>
 first = "Michail"
 print(first[2])
 print(first[-3])
-           </pre>
+       </xmp>    </pre>
     
 <p><strong>Output</strong></p>
    <pre class="prettyprint">
+   <xmp>
 c
 a
-           </pre>
+       </xmp>    </pre>
 <p>Αν και μας αρέσει η ιδιότητα του index που υπάρχει στα 
     string, συνήθως δεν ζητάμε ένα μεμονωμένο χαρακτήρα αλλά 
     ένα υποσύνολο του string. Για να καταφέρουμε να διαβάσουμε
@@ -323,14 +331,16 @@ a
 
      <p><strong>App.py</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 first = "Michail"
 print(first[0:3])
-             </pre>
+         </xmp>    </pre>
       
   <p><strong>Output</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 Mic
-             </pre>
+         </xmp>    </pre>
 <p>Ο πρώτος αριθμός δηλώνει το index από το οποίο θα 
     αρχίζουμε να διαβάζουμε το string, ενώ ο δεύτερος αριθμός 
     δηλώνει πόσα index στο σύνολο τους θα διαβάσουμε. Άρα η 
@@ -349,14 +359,16 @@ Mic
 
          <p><strong>App.py</strong></p>
          <pre class="prettyprint">
+		 <xmp>
 first = "Michail"
 print(first[0:6:2])
-                 </pre>
+              </xmp>   </pre>
           
       <p><strong>Output</strong></p>
          <pre class="prettyprint">
+		 <xmp>
 Mca
-                 </pre>
+            </xmp>     </pre>
 
 <p>Πριν κλείσουμε την σημερινή δωρεάν ενότητα στην Python 
     γλώσσα προγραμματισμού, ας δούμε μερικά ακόμα functions που 
@@ -368,14 +380,16 @@ Mca
 
     <p><strong>App.py</strong></p>
     <pre class="prettyprint">
+	<xmp>
 name = "michail kassapoglou"
 print(name.title())
-            </pre>
+        </xmp>    </pre>
      
  <p><strong>Output</strong></p>
     <pre class="prettyprint">
+	<xmp>
 Michail Kassapoglou
-            </pre>
+         </xmp>   </pre>
 <p>Η <strong>replace( )</strong> function αντικαθιστά χαρακτήρες 
     σε ένα string. Δέχεται δύο παραμέτρους – η πρώτη είναι ο 
     χαρακτήρας που ψάχνουμε να αντικαταστήσουμε και η δεύτερη 
@@ -383,14 +397,16 @@ Michail Kassapoglou
      εισάγουμε στο string ως αντικατάσταση του πρώτου.</p>
      <p><strong>App.py</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 name = "Michail Kassapogloy"
 print( name.replace( "y", "u" ) )
-             </pre>
+         </xmp>    </pre>
       
   <p><strong>Output</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 Michail Kassapoglou
-             </pre>
+        </xmp>     </pre>
 <p>Με την function <strong>find( )</strong> μπορούμε να ψάξουμε για έναν 
     ή περισσότερους χαρακτήρες σε ένα string. Το αποτέλεσμα 
     είναι ένας αριθμός ο οποίος αντιπροσωπεύει τον index από
@@ -398,14 +414,16 @@ Michail Kassapoglou
      
      <p><strong>App.py</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 name = "Michail Kassapoglou"
 print( name.find("Kassapoglou") )
-             </pre>
+         </xmp>    </pre>
       
   <p><strong>Output</strong></p>
      <pre class="prettyprint">
+	 <xmp>
 8
-             </pre>
+         </xmp>    </pre>
 <p>Με την <strong>strip( )</strong> function μπορούμε να αφαιρέσουμε 
     κενά από αριστερά και δεξιά ενός string ή χαρακτήρες που είναι στα 
     άκρα του string. Συνήθως όμως το χρησιμοποιούμε για να αφαιρέσουμε 
@@ -413,14 +431,16 @@ print( name.find("Kassapoglou") )
     
     <p><strong>App.py</strong></p>
     <pre class="prettyprint">
+	<xmp>
 name = "  Michail Kassapoglou  "
 print( name.strip() )
-            </pre>
+        </xmp>    </pre>
      
  <p><strong>Output</strong></p>
     <pre class="prettyprint">
+	<xmp>
 Michail Kassapoglou
-            </pre>
+        </xmp>    </pre>
 <p>Η τελευταία function που θα αναλύσουμε είναι η <strong>split( )</strong>
      η οποία επιστρέφει μια λίστα με όλες τις λέξεις που περιέχονται σε
       ένα string. Δεν πειράζει αν ακόμα δεν καταλαβαίνετε την έννοια της
@@ -428,14 +448,16 @@ Michail Kassapoglou
        
        <p><strong>App.py</strong></p>
        <pre class="prettyprint">
+	   <xmp>
 name = "Michail Kassapoglou"
 print( name.split(" ") )
-               </pre>
+          </xmp>     </pre>
         
     <p><strong>Output</strong></p>
        <pre class="prettyprint">
+	   <xmp>
 ['Michail', 'Kassapoglou']
-               </pre>
+          </xmp>     </pre>
 <p>Νομίζω πριν κλείσουμε την ενότητα, θα ήταν χρήσιμο να αναφερθούμε
      στο πως μπορείτε να βρείτε από μόνοι σας όλες αυτές τις 
      μεθόδους και ακόμα περισσότερες που δεν έχουμε αναφέρει 
