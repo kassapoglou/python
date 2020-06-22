@@ -146,7 +146,7 @@
 								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 									<div class="slider-text-inner text-center">
 										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ PYTHON</strong></h1>
-										<h2><strong>ΕΝΟΤΗΤΑ 9 - if-else statements and logical operators</strong></h2>
+										<h2><strong>ΕΝΟΤΗΤΑ 9 - IF-ELSE STATEMENTS AND LOGICAL OPERATORS</strong></h2>
 										<h2><strong><span><a
 														href="https://kassapoglou.github.io/main/index.html">Home</a> |
 													<a
@@ -183,7 +183,7 @@
 														</center>
 										<h3 align="center"><a
 											
-												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 9 PYTHON - if-else statements and logical operators</a></h3>
+												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 9 PYTHON - IF-ELSE STATEMENTS AND LOGICAL OPERATORS</a></h3>
   <p>Όπως όλες οι γλώσσες προγραμματισμού, έτσι και η Python μας 
 δίνει την δυνατότητα να γράψουμε κώδικα που αποφασίζει από μόνο του για 
 την ροή εκτέλεσης του προγράμματος βασιζόμενο σε κάποιες συνθήκες. Στο 
@@ -203,17 +203,19 @@
 
  <p><strong>App.py</strong></p>
  <pre class="prettyprint">
+ <xmp>
     x = 5
     y = 10
     
     if x < y:
         print("x is less than y")
-         </pre>
+ </xmp>   </pre>
   
 <p><strong>Output</strong></p>
  <pre class="prettyprint">
+	 <xmp>
     x is less than 
-         </pre> 
+	 </xmp>  </pre> 
 
 <p>Κάθε if statement ξεκινάει με την λέξη κλειδί <strong>if</strong> και αμέσως μετά 
 ακολουθεί μια συνθήκη. Εάν η συνθήκη είναι True (στο παράδειγμά μας 
@@ -241,6 +243,7 @@
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     first = int(input("Enter the first number: "))
     second = int(input("Enter the second number: "))
     if first>second:
@@ -251,17 +254,18 @@
         minimum = first
     print("Maximum: ",maximum)
     print("Minimum: ",minimum)
-        </pre>
+	</xmp>   </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     Enter the first number: 10
     Enter the second number: 20
     Maximum:  20
     Minimum:  10
-        </pre> 
+    </xmp>    </pre> 
 
-<p>Από τον ποιο πάνω κώδικα, περιμένουμε μια απάντηση από 
+<p>Από τον παραπάνω κώδικα, περιμένουμε μια απάντηση από 
 την σύγκριση που κάνει ο if-else συνδυασμός στα δεδομένα που του 
 δώσαμε. Μπορούμε όμως να έχουμε και περισσότερες από μια επιλογές 
 απλά προσθέτοντας πολλαπλά if else. Μάλιστα η Python μας επιτρέπει 
@@ -271,6 +275,7 @@
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     number = int(input("Enter the numeric grade: "))
     if number > 89:
         letter = 'A'
@@ -281,13 +286,14 @@
     else:
         letter = 'F'
     print("The letter grade is", letter)
-        </pre>
+	</xmp> </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     Enter the numeric grade: 67
     The letter grade is F
-        </pre> 
+	</xmp>   </pre> 
 
 <p>Στον παραπάνω κώδικα πρέπει να προσέξουμε την σημαντική χρήση 
 του τελευταίου else. Σαν λογική, το πρόγραμμα μας δεν ενδιαφέρεται 
@@ -319,16 +325,18 @@
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     ans = int( input("What is 5 + 5? ") )
     if ans == 10:
         print("You got it right!")
-        </pre>
+	</xmp>   </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     What is 5 + 5? 10
     You got it right!
-        </pre> 
+	</xmp>   </pre> 
 
 <p>Το δεύτερο σημείο στο οποίο πρέπει να αναφερθούμε είπαμε ότι είναι 
 οι logical operators. Με τα logical operators μπορούμε να συνδυάσουμε 
@@ -348,43 +356,49 @@ True για να εμφανιστεί το μήνυμα.</p>
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     x, y, z = 5, 10, 5
     if x < y and x == z:
         print("Both statements were true")
-        </pre>
+	</xmp>  </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     Both statements were true
-        </pre> 
+	</xmp> </pre> 
 
 <p>Στον παρακάτω κώδικα, ζητάμε μια από τις δύο συνθήκες τουλάχιστον να είναι True.</p>
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     x, y, z = 5, 10, 5
     if x < y or x != z:
         print("One or both statements were true")
-        </pre>
+	</xmp>  </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     One or both statements were true
-        </pre> 
+	</xmp>   </pre> 
 
 <p>Εδώ ζητάμε την αντίστροφη κατάσταση από εκείνη στην οποία βρίσκεται η boolean μεταβλητή.</p>
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     flag = False
     if not flag:
         print("Flag is False")
-        </pre>
+    </xmp>    </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     Flag is False
-        </pre> 
+	</xmp>   </pre> 
 
 <p>Ένας καταπληκτικός συνδυασμός που συνήθως βλέπουμε σε κώδικα 
 και μας λύνει τα χέρια σε πάρα πολλές συνθήκες που θέλουμε να ελέγξουμε 
@@ -395,15 +409,17 @@ True για να εμφανιστεί το μήνυμα.</p>
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     word = "Baseball"
     if "b" in word:
         print( f"{word } contains the character b")
-        </pre>
+	</xmp>  </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     Baseball contains the character b
-        </pre> 
+	</xmp>   </pre> 
 
 <p>Ας δούμε λοιπόν ένα τελικό πρόγραμμα που περιέχει όλα όσα καλύψαμε 
 στο σημερινό δωρεάν μάθημα Python. Στον κώδικα που ακολουθεί προσπαθούμε 
@@ -413,6 +429,7 @@ True για να εμφανιστεί το μήνυμα.</p>
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
+	<xmp>
     MIN_SALARY = 30000
     MIN_YEARS = 2
     
@@ -423,14 +440,15 @@ True για να εμφανιστεί το μήνυμα.</p>
         print('You qualify for the loan.')
     else:
         print('You do not qualify for this loan.')
-        </pre>
+	</xmp>   </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
+	<xmp>
     Enter your annual salary: 31000
     Enter the number of years employed: 3
     You qualify for the loan.
-        </pre> 
+	</xmp>   </pre> 
 
 									</div>
 								</div>
