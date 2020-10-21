@@ -189,7 +189,7 @@
 <p>Στην προηγούμενη ενότητα, είχαμε δει πως μπορούμε να περάσουμε παραμέτρους σε ένα function. Μπορούμε να πάρουμε αυτή την ιδέα και να την χρησιμοποιήσουμε σε συνδυασμό με τις λίστες. Οπότε σαν παράμετρο μπορούμε να περάσουμε μια list σε ένα function όπως δείχνει και το παρακάτω παράδειγμα.</p>
 
 <p><strong>App.py</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 numbers1 = [1, 2, 3, 4, 5]
 
 def addnumbers(nums):
@@ -200,40 +200,40 @@ def addnumbers(nums):
 
 addnumbers(numbers1)
 	
-         </pre>
+      </xmp>   </pre>
   
 <p><strong>Output</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 15	
-		 </pre>
+ </xmp>	 </pre>
 
 <p>Μέχρι τώρα έχουμε δει παραδείγματα με functions που δέχονται συγκεκριμένο αριθμό παραμέτρων. Αν θέλαμε να περάσουμε σε μια function μεταβλητό αριθμό παραμέτρων τότε θα πρέπει να χρησιμοποιήσουμε το *args. Αυτό που στην ουσία μας δίνει την δυνατότητα να περάσουμε μεταβλητό αριθμό παραμέτρων δεν είναι η λέξη args αλλά το * σύμβολο. Αντί για args μπορούμε να χρησιμοποιήσουμε οποιαδήποτε άλλη λέξη εμείς θέλουμε, απλά έχει καθιερωθεί ανάμεσα στους προγραμματιστές να γράφουν *args. Ας δούμε όμως πως μπορούμε να χρησιμοποιήσουμε το *args γιατί υπάρχουν κάποιες ακόμα μικρές λεπτομέρειες στις οποίες πρέπει να αναφερθούμε.</p>
 
 <p><strong>App.py</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 def outputData(name, *args):
 print(type(args))
 for arg in args:
 	print(arg)
 
 outputData("Barcelona", "Read Madrid", True, "Liverpool", 2)
-         </pre>
+      </xmp>   </pre>
   
 <p><strong>Output</strong></p>
- <pre class="prettyprint">
-	<class 'tuple'>
+ <pre class="prettyprint"><xmp>
+<class 'tuple'>
 Read Madrid
 True
 Liverpool
 2	
-		 </pre>
+	</xmp></pre>
 
 <p>Παρατηρώντας το αποτέλεσμα μπορούμε να βγάλουμε τα εξής συμπεράσματα. Πρώτον, όταν χρησιμοποιούμε το *args σε συνδυασμό με άλλες παραμέτρους, θα πρέπει να είναι τελευταίο στην λίστα των παραμέτρων που περνάμε στην function. Δεύτερον, αν προσέξετε το type του args, θα δείτε ότι είναι ένα tuple. Ο λόγος που δεν βλέπουμε την Barcelona στο output είναι γιατί αυτή έχει περαστεί σαν τιμή στην παράμετρο name και όχι στο args που τυπώνουμε στην οθόνη. Τρίτη και τελευταία παρατήρηση είναι το γεγονός ότι όταν καλούμε το args μέσα στο κώδικα του function, όπως κάνουμε στο for loop, χρησιμοποιούμε μόνο το όνομα χωρίς το *.</p>
 
 <p>Εκτός από το *args, κάποιες φορές μπορείτε να δείτε και το **kwargs να χρησιμοποιείται σε Python κώδικα. To **kwargs δουλεύει ακριβώς με την ίδια λογική όπως το *args με την διαφορά ότι αντί μόνο για τις τιμές περνάμε μαζί και τα ονόματα των μεταβλητών. Το **kwargs αποθηκεύει αυτά τα στοιχεία σαν dictionary. Αν και ακόμα δεν έχουμε μιλήσει για τα dictionaries, ο τρόπος που αποθηκεύουν τα δεδομένα είναι συνδυασμός ενός κλειδιού (key) και μιας τιμής (value). Με το όνομα του κλειδιού έχουμε πρόσβαση στην τιμή. Αργότερα θα αφιερώσουμε ολόκληρη ενότητα για να αναλύσουμε τα dictionaries. </p>
 
 <p><strong>App.py</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 def output_data(**kwargs):
 print(type(kwargs))
 for key, value in kwargs.items():
@@ -241,55 +241,56 @@ for key, value in kwargs.items():
 
 
 output_data(firstTeam="Barcelona", secondTeam="Real Madrid", score="2-2")
-         </pre>
+      </xmp>   </pre>
   
 <p><strong>Output</strong></p>
- <pre class="prettyprint">
-	<class 'tuple'>
+ <pre class="prettyprint"><xmp>
+
 <class 'dict'>
 firstTeam is Barcelona
 secondTeam is Real Madrid
 score is 2-2
-		 </pre>
+</xmp>	 </pre>
 
 <p>Οι functions που έχουμε δημιουργήσει μέχρι τώρα τυπώνουν στην οθόνη το αποτέλεσμα άμεσα χωρίς να μας δίνουν την δυνατότητα να σώσουμε το αποτέλεσμα σε κάποια μεταβλητή. Για να μπορεί μια function να έχει την δυνατότητα να μας “επιστρέφει” κάποια τιμή που μπορούμε να αποθηκεύσουμε και να διαχειριστούμε αργότερα, θα πρέπει να προσθέσουμε στο κώδικα της function το return. </p>
 
 <p>Το παρακάτω παράδειγμα μας δείχνει σε πολύ απλή μορφή πως μπορούμε να δημιουργήσουμε ένα function που υπολογίζει το άθροισμα δύο αριθμών και μας επιστρέφει πίσω το αποτέλεσμα το οποίο μπορούμε να αποθηκεύσουμε σε μια μεταβλητή την οποία μπορούμε να καλέσουμε αργότερα στον κώδικα μας.</p>
 
 <p><strong>App.py</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 def addNums(num1, num2):
 	return num1 + num2
 
 total = addNums(5, 2)
 
 print(total)
-         </pre>
+      </xmp>   </pre>
   
 <p><strong>Output</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 <class 'dict'>
 	7
-		 </pre>
+</xmp>	 </pre>
 
 <p>Ένα θέμα που πρέπει να προσέχουμε όταν γράφουμε κώδικα για functions είναι η πρόσβαση που έχουμε σε μεταβλητές που έχουν οριστεί εκτός function. Στο παρακάτω παράδειγμα, ορίζουμε μια μεταβλητή στην αρχή του κώδικα. Αυτή θεωρείται να είναι Global μεταβλητή γιατί οποιοσδήποτε κώδικας μέσα στο ίδιο αρχείο έχει πρόσβαση σε αυτή την μεταβλητή. Όμως, αν και η μεταβλητή είναι προσβάσιμη από παντού μέσα στο ίδιο αρχείο, δεν μπορεί να την καλέσει ένα function. Τα functions μπορούν να διαχειριστούν μεταβλητές που είναι ορισμένες μέσα σε αυτές ή έχουν περαστεί σαν παράμετροι στην παρένθεση του function. Αν τρέξουμε το πρόγραμμα θα μας εμφανίσει λάθος.</p>
 
 <p><strong>App.py</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 number = 3
 
 def testAccess():
 	return number += 1
 
-testAccess()
+testAccess()</xmp>
          </pre>
   
 <p><strong>Output</strong></p>
- <pre class="prettyprint">
+ <pre class="prettyprint"><xmp>
 File "C:\Users\Mkassapoglou\Desktop\test\main.py", line 4
 return number += 1
 				^
 SyntaxError: invalid syntax
+</xmp>
 		 </pre>
 
 		 <!--###################################################################################################-->
