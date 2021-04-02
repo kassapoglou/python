@@ -1,62 +1,34 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
+	<!-- set the encoding of your site -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Δωρεάν Μαθήματα Python</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the HandheldFriendly -->
+	<meta name="HandheldFriendly" content="True">
+	<!-- set the description -->
 	<meta name="description"
-		content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Python">
+	content="Μια ολοκληρωμένη σειρά δωρεάν μαθημάτων και on-line σεμιναρίων στην γλώσσα προγραμματισμού Python">
+	<!-- set the Keyword -->
 	<meta name="robots" content="index, follow">
 	<meta name="keywords" content="python, flask, Django, δωρεάν, seminaria python, mathimata python,
                προγραμματισμός, δωρεάν μαθήματα python, δωρεάν σεμινάρια python, μαθήματα python, σεμινάρια python" />
 	<meta name="author" content="Michail Kassapoglou" />
-
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
+	<!-- set the page title -->
+	<title>Δωρεάν Μαθήματα Python</title>
+	<!-- include google roboto font cdn link -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+	<!-- include the site bootstrap stylesheet -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-	<!-- Flaticons  -->
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/colors.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="style.css">
+	<!-- include the site responsive stylesheet -->
+	<link rel="stylesheet" href="css/responsive.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -68,123 +40,213 @@
 
 		gtag('config', 'UA-150900548-1');
 	</script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150900548-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-150900548-1');
+	</script>
+	<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
 </head>
-
 <body>
-
-	<div class="colorlib-loader"></div>
-
-	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-			<div class="upper-menu">
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="page-header">
+			<!-- top bar -->
+			<div class="top-bar bg-dark text-gray">
 				<div class="container">
-					<div class="row">
-						<div class="col-xs-4">
-							<p>Welcome to Kassapoglou</p>
-						</div>
-						<div class="col-xs-6 col-md-push-2 text-right">
-							<p>
-								<ul class="colorlib-social-icons">
-									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
-									<li><a href="https://www.facebook.com/kassapoglou/?ref=bookmarks"><i
-												class="icon-facebook"></i></a></li>
-									<li><a href="https://www.linkedin.com/groups/4390739/"><i
-												class="icon-linkedin"></i></a></li>
-									<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
-								</ul>
-							</p>
-							<!--<p class="btn-apply"><a href="#">Apply Now</a></p>-->
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-2">
-							<div id="colorlib-logo"><a
-									href="https://kassapoglou.github.io/main/index.html">Kassapoglou</a></div>
-						</div>
-						<div class="col-md-10 text-right menu-1">
-							<ul>
-								<li><a href="https://kassapoglou.github.io/main/index.html">Home</a></li>
-								<li class="has-dropdown active">
-									<a href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-									<ul class="dropdown">
-										<li><a href="https://kassapoglou.github.io/java/java-programming.html">Java</a>
-										</li>
-										<li><a
-												href="https://kassapoglou.github.io/python/python-programming.html">Python</a>
-										</li>
-										<li><a href="https://kassapoglou.github.io/go/go-programming.html">GO</a></li>
-										<li><a
-												href="https://kassapoglou.github.io/javascript/javascript-programming.html">JavaScript</a>
-										</li>
-										<li><a href="https://kassapoglou.github.io/maven/learning-maven.html">Apache
-												Maven</a></li>
-										<li><a href="https://kassapoglou.github.io/camel/apache-camel-programming.html">Apache
-												Camel</a></li>
-									</ul>
+					<div class="row top-bar-holder">
+						<div class="col-xs-9 col">
+							<!-- bar links -->
+							<ul class="font-lato list-unstyled bar-links">
+								<li>
+									<a href="tel:+30 6976434707">
+										<strong class="dt element-block text-capitalize hd-phone">Phone :</strong>
+										<strong class="dd element-block hd-phone">+(30) 6976434707 </strong>
+										<i class="fas fa-phone-square hd-up-phone hidden-sm hidden-md hidden-lg"><span class="sr-only">phone</span></i>
+									</a>
 								</li>
-								<!--<li><a href="about.html">About</a></li>-->
-								<!--	<li><a href="event.html">Events</a></li>
-								<li><a href="news.html">News</a></li> -->
-								<li><a href="https://kassapoglou.github.io/main/contact.html">Contact</a></li>
+								<li>
+									<a href="mailto:michail.kassapoglou@gmail.com">
+										<strong class="dt element-block text-capitalize hd-phone">Email :</strong>
+										<strong class="dd element-block hd-phone">michail.kassapoglou@gmail.com</strong>
+										<i class="fas fa-envelope-square hd-up-phone hidden-sm hidden-md hidden-lg"><span class="sr-only">email</span></i>
+									</a>
+								</li>
 							</ul>
 						</div>
+						<div class="col-xs-3 col justify-end">
+							<!-- user links -->
+							<!--<ul class="list-unstyled user-links fw-bold font-lato">-->
+							<!--	<li><a href="#popup1" class="lightbox">Login</a> <span class="sep">|</span> <a href="#popup2" class="lightbox">Register</a></li>-->
+							<!--</ul>-->
+						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
-		<aside id="colorlib-hero">
-			<div class="flexslider">
-				<ul class="slides">
-					<li style="background-image: url(images/python-banner2.jpg);">
-						<div class="overlay"></div>
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
-									<div class="slider-text-inner text-center">
-										<h1><strong>ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ PYTHON</strong></h1>
-										<h2><strong>ΕΝΟΤΗΤΑ 17 - Theory Review – Shopping Cart Complete Example</strong></h2>
-										<h2><strong><span><a
-														href="https://kassapoglou.github.io/main/index.html">Home</a> |
-													<a
-														href="https://kassapoglou.github.io/main/courses.html">Courses</a>
-													| <a href="https://kassapoglou.github.io/python/python-programming.html">PYTHON PROGRAMMING</a></span></strong></h2>
+			<!-- header holder -->
+			<div class="header-holder">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-3">
+							<!-- logo -->
+							<div class="logo">
+								<a href="index.html">
+									<img src="images/logo.png" alt="KASSAPOGLOU">
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-9 static-block">
+							<!-- nav -->
+							<nav id="nav" class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<!-- navbar collapse -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<!-- main navigation -->
+									<ul class="nav navbar-nav navbar-right main-navigation text-uppercase font-lato">
+										<li class="dropdown">
+											<a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a>
+											<!-- <ul class="dropdown-menu"> -->
+												<!--<li><a href="home.html">Home</a></li>-->
+											<!--	<li><a href="home2.html">Home 2</a></li>
+												<li><a href="home3.html">Home 3</a></li>-->
+											<!--</ul> -->
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ΣΕΜΙΝΑΡΙΑ</a>
+											<!--<ul class="dropdown-menu"> -->
+												<!--<li><a href="courses-list.html">Course List</a></li>-->
+												<!--<li><a href="course-single.html">Course Single</a></li>-->
+										<!--	</ul> -->
+										</li>
+										<li class="dropdown">
+											<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ΠΡΟΓΡΑΜΜΑ</a>-->
+											<!--<ul class="dropdown-menu">-->
+												<!--<li><a href="events-list.html">Event List</a></li>-->
+												<!--<li><a href="event-sigle.html">Event Single</a></li>-->
+											<!--</ul>-->
+										</li> 
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ΧΟΡΗΓΟΙ</a>
+										<!--	<ul class="dropdown-menu">-->
+											<!--	<li><a href="404.html">404 Page</a></li>
+												<li><a href="about-us.html">About us</a></li>
+												<li><a href="forum.html">Forum Page</a></li>
+												<li><a href="forum-single.html">Forum Single</a></li>
+												<li><a href="instructors-list.html">Instructors List</a></li>
+												<li><a href="instructor-single.html">Instructors Single</a></li>
+												<li><a href="login-register.html">Login &amp; Register</a></li> -->
+										<!--	</ul>-->
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ΤΕΧΝΟΛΟΓΙΑ</a>
+										<!--	<ul class="dropdown-menu">
+												<li><a href="blog.html">Blog List</a></li>
+												<li><a href="blog-single.html">Blog Single</a></li>
+											</ul> -->
+										</li>
+									<!--	<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+											<ul class="dropdown-menu">
+												<li><a href="shop.html">Shop List</a></li>
+												<li><a href="single-product.html">Shop Single</a></li>
+												<li><a href="cartage.html">Cart Page</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+											</ul>
+										</li>-->
+										<li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+									</ul>
+								</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- heading banner -->
+			<header class="heading-banner text-white bgCover" style="background-image: url(images/python2.jpg);">
+				<div class="container holder">
+					<div class="align">
+						<h1>Python</h1>
+					</div>
+				</div>
+			</header>
+			<!-- breadcrumb nav -->
+			<nav class="breadcrumb-nav">
+				<div class="container">
+					<!-- breadcrumb -->
+					<ol class="breadcrumb">
+						<li><a href="home.html">ΑΡΧΙΚΗ</a></li>
+						<li><a href="contact.html">ΣΕΜΙΝΑΡΙΑ</a></li>
+						<li class="active">PYTHON</li>
+					</ol>
+				</div>
+			</nav>
+			<!-- two columns -->
+			<div id="two-columns" class="container">
+				<div class="row">
+					<!-- content -->
+					<article id="content" class="col-xs-12 col-md-9">
+						<!-- content h1 -->
+						<h1 class="content-h1 fw-semi">ΕΝΟΤΗΤΑ 17 - Theory Review - Shopping Cart Complete Example</h1>
+						<!-- view header -->
+						<header class="view-header row">
+							<div class="col-xs-12 col-sm-9 d-flex">
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink rounded-circle">
+											<a href="#"><img src="michail.jpg" class="rounded-circle" alt="image description"></a>
+										</div>
+										<div class="description-wrap">
+											<h2 class="author-heading"><a href="#">Εισηγητής</a></h2>
+											<h3 class="author-heading-subtitle text-uppercase">ΜΙΧΑΛΗΣ ΚΑΣΑΠΟΓΛΟΥ</h3>
+										</div>
+									</div>
+								</div>
+								<div class="d-col">
+									<!-- post author -->
+									<div class="post-author">
+										<div class="alignleft no-shrink icn-wrap">
+											<i class="far fa-bookmark"></i>
+										</div>
+										<div class="description-wrap">
+											<h2 class="author-heading"><a href="#">Κατηγορία</a></h2>
+											<h3 class="author-heading-subtitle text-uppercase">Programing language</h3>
+										</div>
 									</div>
 								</div>
 							</div>
+							<!--<div class="col-xs-12 col-sm-3">
+								<div class="rating-holder">
+									<ul class="star-rating list-unstyled justify-end">
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+										<li><span class="fas fa-star"><span class="sr-only">star</span></span></li>
+									</ul>
+									<strong class="element-block text-right subtitle fw-normal">(2 Reviews)</strong>
+								</div>
+							</div>-->
+						</header>
+						<div class="aligncenter content-aligncenter">
+							<img src="images/python3.jpg" alt="image description">
 						</div>
-					</li>
-				</ul>
-			</div>
-		</aside>
-
-		<div class="colorlib-classes">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-lg-12">
-						<div class="row row-pb-lg">
-							<div class="col-md-12 animate-box">
-								<div class="classes class-single">
-									<div class="classes-img" style="background-image: url(images/python-banner.jpg);">
-										<span class="price text-center"><small>FREE</small></span>
-									</div>
-									<div class="desc desc2">
-														<center>
-															<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-																<input type="hidden" name="cmd" value="_s-xclick" />
-																<input type="hidden" name="hosted_button_id" value="GQD77W6K672RA" />
-																<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
-																	title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-																<img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
-															</form>
-														</center>
-										<h3 align="center"><a
-											
-												href="https://kassapoglou.github.io/python/python-programming.html">ΕΝΟΤΗΤΑ 17 PYTHON - Theory Review – Shopping Cart Complete Example</a></h3>
-<p>Στο σημερινό δωρεάν μάθημα Python, θα δούμε ένα ολοκληρωμένο παράδειγμα που χρησιμοποιεί σχεδόν όλες τις έννοιες προγραμματισμού που έχουμε αναλύσει μέχρι τώρα στην Python.</p>
+						<p>Στο σημερινό δωρεάν μάθημα Python, θα δούμε ένα ολοκληρωμένο παράδειγμα που χρησιμοποιεί σχεδόν όλες τις έννοιες προγραμματισμού που έχουμε αναλύσει μέχρι τώρα στην Python.</p>
 
 <p>Στο παράδειγμα μας θα αναλύσουμε και θα γράψουμε τον κώδικα για ένα καλάθι αγοράς. Φαντάζομαι όλοι έχετε αγοράσει κάποιο προϊόν από την Amazon. Πριν πληρώσετε, το προϊόν που έχετε επιλέξει μπαίνει πρώτα σε ένα καλάθι αγοράς σε περίπτωση που θέλετε να παραμείνετε στην ιστοσελίδα ψάχνοντας για περισσότερα προϊόντα ή ακόμα γιατί μπορεί να αλλάξετε γνώμη και να διαγράψετε το συγκεκριμένο προϊόν από το καλάθι αγοράς και να προτιμήσετε κάτι άλλο. Όποια και να είναι η απόφαση σας, θα πρέπει το καλάθι αγοράς να την υποστηρίζει.</p>
 
@@ -202,76 +264,76 @@ basket = [ ]
 <p>Η ικανότητα να προσθέτουμε καινούργια προϊόντα στο καλάθι αγορά μας, θα στηριχτεί στις μεθόδους που μας προσφέρει η λίστα. Συγκεκριμένα, η <strong>append</strong> μέθοδο είναι αυτή που μας επιτρέπει να προσθέτουμε καινούργια στοιχεία στην λίστα. Μπορούμε να δοκιμάσουμε τον κώδικα της function περνώντας ένα item στην function.</p>
 
 <p><strong>App.py</strong></p>
- <pre class="prettyprint"><xmp>
-	basket = []
+<pre class="prettyprint"><xmp>
+basket = []
 
-	def addItem(item):
-		basket.append(item)
-		print(f"The item {item} has been added to your basket.")
-	
-	addItem("Laptop")
-	
-      </xmp>   </pre>
-  
+def addItem(item):
+	basket.append(item)
+	print(f"The item {item} has been added to your basket.")
+
+addItem("Laptop")
+
+	</xmp>   </pre>
+
 <p><strong>Output</strong></p>
- <pre class="prettyprint"><xmp>
+<pre class="prettyprint"><xmp>
 The item Laptop has been added to your basket.	
- </xmp>	 </pre>
+</xmp>	 </pre>
 
  <p>Σαν επόμενο βήμα θέλουμε να αφαιρέσουμε προϊόντα από το καλάθι αγοράς. Για αυτό το σκοπό θα χρησιμοποιήσουμε την remove μέθοδο από την λίστα. Ο κώδικας αυτός θα γραφτεί στην δική του function.</p>
 
- <p><strong>App.py</strong></p>
- <pre class="prettyprint"><xmp>
-	basket = []
+<p><strong>App.py</strong></p>
+<pre class="prettyprint"><xmp>
+basket = []
 
-	def addItem(item):
-		basket.append(item)
-		print(f"The item {item} has been added to your basket.")
-	
-	def removeItem(item):
-		basket.remove(item)
-		print(f"The item {item} has been removed from your basket.")
-	
-	addItem("Laptop")
-	removeItem("Laptop")
-	
-      </xmp>   </pre>
+def addItem(item):
+	basket.append(item)
+	print(f"The item {item} has been added to your basket.")
+
+def removeItem(item):
+	basket.remove(item)
+	print(f"The item {item} has been removed from your basket.")
+
+addItem("Laptop")
+removeItem("Laptop")
+
+</xmp>   </pre>
   
 <p><strong>Output</strong></p>
- <pre class="prettyprint"><xmp>
-	The item Laptop has been added to your basket.
-	The item Laptop has been removed from your basket.	
- </xmp>	 </pre>
+<pre class="prettyprint"><xmp>
+The item Laptop has been added to your basket.
+The item Laptop has been removed from your basket.	
+</xmp>	 </pre>
 
 <p>Κάποια στιγμή, μπορεί να αποφασίσετε να καθαρίσετε το καλάθι αγοράς για να ξεκινήσετε την αγορά σας από την αρχή ίσως γιατί βρήκατε κάποιο καλύτερο προϊόν. Για να δώσουμε στον χρήστη την δυνατότητα καθαρισμού του καλαθιού αγοράς θα πρέπει να γράψουμε ακόμα μια function που θα χρησιμοποιεί την μέθοδο clear της λίστας.</p>
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint"><xmp>
-	basket = []
+basket = []
 
-	def addItem(item):
-		basket.append(item)
-		print(f"The item {item} has been added to your basket.")
-	
-	def removeItem(item):
-		basket.remove(item)
-		print(f"The item {item} has been removed from your basket.")
-	
-	def clearBasket():
-		basket.clear()
-		print("Your basket is now empty")
-	
-	addItem("Laptop")
-	removeItem("Laptop")
-	clearBasket()
-	
-	 </xmp>   </pre>
+def addItem(item):
+	basket.append(item)
+	print(f"The item {item} has been added to your basket.")
+
+def removeItem(item):
+	basket.remove(item)
+	print(f"The item {item} has been removed from your basket.")
+
+def clearBasket():
+	basket.clear()
+	print("Your basket is now empty")
+
+addItem("Laptop")
+removeItem("Laptop")
+clearBasket()
+
+	</xmp>   </pre>
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint"><xmp>
-	The item Laptop has been added to your basket.
-	The item Laptop has been removed from your basket.
-	Your basket is now empty	
+The item Laptop has been added to your basket.
+The item Laptop has been removed from your basket.
+Your basket is now empty	
 </xmp>	 </pre>
 
 <p>Το επόμενο λογικό βήμα είναι να μπορέσουμε να δούμε όλα τα προϊόντα που βρίσκονται μέσα στο καλάθι αγοράς. Για να το πετύχουμε αυτό θα γράψουμε ένα function μέσα στο οποίο υπάρχει ένα loop που μας δείχνει όλα τα στοιχεία της λίστας.</p>
@@ -311,12 +373,12 @@ showBasket()
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint"><xmp>
-	The item Laptop has been added to your basket.
-	Your basket contains the following items
-	Laptop
-	The item Laptop has been removed from your basket.
-	Your basket has been cleared
-	Your basket is empty...	
+The item Laptop has been added to your basket.
+Your basket contains the following items
+Laptop
+The item Laptop has been removed from your basket.
+Your basket has been cleared
+Your basket is empty...	
 </xmp>	 </pre>
 
 <p>Για μπορέσουμε να αλληλεπιδράσουμε με το καλάθι αγοράς, θα πρέπει η εφαρμογή να ρωτάει τον τελικό χρήστη τι ακριβώς θέλει να κάνει. Ο πιο εύκολος τρόπος να προσεγγίσουμε αυτό το πρόβλημα είναι να δημιουργήσουμε ένα loop μέσα από το οποίο θα παρουσιάζουμε όλες τις επιλογές που θα έχει ο χρήστης – να βγει από την εφαρμογή, να προσθέσει ένα καινούργιο προϊόν, να αφαιρέσει ένα προϊόν,να δει όλα τα προϊόντα που υπάρχουν ήδη στο καλάθι αγοράς ή να εγκαταλείψει την εφαρμογή. Και αυτός ο κώδικας, σύμφωνα με την προσέγγιση μας, θα βρίσκεται μέσα σε ένα function.</p>
@@ -375,332 +437,387 @@ main()
  
 <p><strong>Output</strong></p>
 <pre class="prettyprint"><xmp>
-	Please type one of the following option:
-	quit/add/remove/show/clear: show
-	Your basket is empty...
-	Please type one of the following option:
-	quit/add/remove/show/clear: add
-	What item would you like to buy?Laptop
-	The item Laptop has been added to your basket.
-	Please type one of the following option:
-	quit/add/remove/show/clear: add
-	What item would you like to buy?Smartphone
-	The item Smartphone has been added to your basket.
-	Please type one of the following option:
-	quit/add/remove/show/clear: show
-	Your basket contains the following items
-	Laptop
-	Smartphone
-	Please type one of the following option:
-	quit/add/remove/show/clear: clear
-	Your basket has been cleared
-	Please type one of the following option:
-	quit/add/remove/show/clear: show
-	Your basket is empty...
-	Please type one of the following option:
-	quit/add/remove/show/clear: quit
-	Thanks for using the Basket Application
-	Your basket is empty…
-	
+Please type one of the following option:
+quit/add/remove/show/clear: show
+Your basket is empty...
+Please type one of the following option:
+quit/add/remove/show/clear: add
+What item would you like to buy?Laptop
+The item Laptop has been added to your basket.
+Please type one of the following option:
+quit/add/remove/show/clear: add
+What item would you like to buy?Smartphone
+The item Smartphone has been added to your basket.
+Please type one of the following option:
+quit/add/remove/show/clear: show
+Your basket contains the following items
+Laptop
+Smartphone
+Please type one of the following option:
+quit/add/remove/show/clear: clear
+Your basket has been cleared
+Please type one of the following option:
+quit/add/remove/show/clear: show
+Your basket is empty...
+Please type one of the following option:
+quit/add/remove/show/clear: quit
+Thanks for using the Basket Application
+Your basket is empty…
+
 </xmp>	 </pre>
 
 <p>Αν και το παράδειγμα μας είναι μια καλή επανάληψη της θεωρίας που έχουμε καλύψει μέχρι τώρα, ο κώδικας θέλει ακόμα πολύ βελτίωση. Για παράδειγμα, δεν υπάρχει τρόπος να αποφύγουμε την περίπτωση όταν ο χρήστης δεν γράψει μια από τις λέξεις που περιμένει η εφαρμογή. Πρέπει να προστατέψουμε την εφαρμογή μας από το να σταματήσει να λειτουργεί εξαιτίας ενός λάθους. Φυσικά υπάρχουν και άλλα σημεία αλλά θα τα καλύψουμε όλα σε μελλοντικές ενότητες.</p>
+			
+						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
+						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
+						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
+						<p>Θα συνεχίζετε να χτίζετε τις γνώσεις σας προχωρώντας  στην δημιουργία functions και να αλληλεπιδράτε με το πρόγραμμα σας όπως να ζητάτε από τον τελικό χρήστη να εισάγει δεδομένα κατά την εκτέλεση της εφαρμογής.</p>
+						<p>Κλάσεις και κληρονομικότητα θα σας απασχολήσουν για αρκετές ενότητες καλύπτοντας όλη την βασική θεωρία του αντικειμενοστραφή προγραμματισμού. Φυσικά κάθε κώδικας χρειάζεται να προστατευτεί από τυχόν λάθη στην εισαγωγή δεδομένων, όποτε θα μάθετε πως να διαχειρίζεστε τα ποιο κοινά λάθη που μπορεί να τύχουν καθώς η εφαρμογή σας εκτελείτε.</p>
+						<p>Στο δεύτερο μέρος των δωρεάν μαθημάτων θα μάθετε να γράφετε multi-threading και multi-processing κώδικα και να αναγνωρίζετε τις διάφορες τους. Επίσης θα εξοικειωθείτε με την έννοια του testing και ποιες βιβλιοθήκες να χρησιμοποιήσετε για να δοκιμάσετε τον κώδικα σας. Τέλος θα μάθετε κάποιες προχωρημένες έννοιες όπως Generators και Iterators, lambda expressions, και web scraping.</p>-->
+						<!--<ul class="listDefault list-unstyled">
+							<li>Thomas Edison may have been behind the invention.</li>
+							<li>Edison worked alongside partners, both financial and commercial, to get his best inventions off the ground,</li>
+							<li>Battling challenging cost targets and the need to build.</li>
+						</ul>
+						<p>Quasar the only home we've ever known extraordinary claims require extraordinary evidence billions billions Drake Eqa tion. Stirred by starlight! At the edge of forever. Rich in mystery Sea of Tranquility. Are creatures of the cosmos descend from astronomers. Trillion and billions upon billions upon billions upon billions upon billions. upon billions upon billions!</p>-->
+						
+						<!-- sectionRow -->
+						<section class="sectionRow">
+							
+							<!-- sectionRowPanelGroup -->
+							<div class="panel-group sectionRowPanelGroup" id="accordion" role="tablist" aria-multiselectable="true">
+								<!-- panel -->
+				
+								
+						
+
+					
 
 
-		 <!--###################################################################################################-->
 
-									</div>
-								</div>
+
+								<!-- panel -->
+								
+								<!-- panel -->
+							
+								<!-- panel -->
+								
+								<!-- panel -->
+							
 							</div>
+							
+							
+						</section>
 
-							<!--<div class="row row-pb-lg animate-box">
-							<div class="col-md-12">
-								<h2 class="colorlib-heading-2">23 Comments</h2>
-								<div class="review">
-						   		<div class="user-img" style="background-image: url(images/person1.jpg)"></div>
-						   		<div class="desc">
-						   			<h4>
-						   				<span class="text-left">Jacob Webb</span>
-						   				<span class="text-right">24 March 2018</span>
-						   			</h4>
-						   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-						   			<p class="star">
-					   					<span class="text-left"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-						   			</p>
-						   		</div>
-						   	</div>
-						   	<div class="review">
-						   		<div class="user-img" style="background-image: url(images/person2.jpg)"></div>
-						   		<div class="desc">
-						   			<h4>
-						   				<span class="text-left">Jacob Webb</span>
-						   				<span class="text-right">24 March 2018</span>
-						   			</h4>
-						   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-						   			<p class="star">
-					   					<span class="text-left"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-						   			</p>
-						   		</div>
-						   	</div>
-						   	<div class="review">
-						   		<div class="user-img" style="background-image: url(images/person3.jpg)"></div>
-						   		<div class="desc">
-						   			<h4>
-						   				<span class="text-left">Jacob Webb</span>
-						   				<span class="text-right">24 March 2018</span>
-						   			</h4>
-						   			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrov</p>
-						   			<p class="star">
-					   					<span class="text-left"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
-						   			</p>
-						   		</div>
-						   	</div>
+						
+						<!-- sectionRow -->
+					
+						<!-- bookmarkFoot -->
+						<div class="bookmarkFoot">
+							<div class="bookmarkCol">
+								<ul class="socail-networks list-unstyled">
+									<li><a href="#" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+									<li><a href="#" class="linkedin"><span class="fab fa-linkedin"></span></a></li>
+									
+								</ul>
 							</div>
-						</div>-->
-
-							<!--<div class="row animate-box">
-							<div class="col-md-12">
-								<h2 class="colorlib-heading-2">Say something</h2>
-								<form action="#">
-									<div class="row form-group">
-										<div class="col-md-6">
-											<!-- <label for="fname">First Name</label> -->
-							<!--		<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-										</div>
-										<div class="col-md-6">
-											<!-- <label for="lname">Last Name</label> -->
-							<!--<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-										</div>
-									</div>
-
-									<div class="row form-group">
-										<div class="col-md-12">
-											<!-- <label for="email">Email</label> -->
-							<!--<input type="text" id="email" class="form-control" placeholder="Your email address">
-										</div>
-									</div>
-
-									<div class="row form-group">
-										<div class="col-md-12">
-											<!-- <label for="subject">Subject</label> -->
-							<!--<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-										</div>
-									</div>
-
-									<div class="row form-group">
-										<div class="col-md-12">
-											<!-- <label for="message">Message</label> -->
-							<!--	<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-										</div>
-									</div>
-									<div class="form-group">
-										<input type="submit" value="Post Comment" class="btn btn-primary">
-									</div>
-								</form>	
+							<div class="bookmarkCol text-right">
+								<a href="#" class="btn btn-theme btn-warning text-uppercase fw-bold">Bookmark this course</a>
 							</div>
-						</div> -->
-						<center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						</div>
+						<h2>ΕΙΣΗΓΗΤΗΣ</h2>
+						<!-- instructorInfoBox -->
+						<div class="instructorInfoBox">
+							<div class="alignleft">
+								<a href="#"><img src="michail.jpg" alt="Merry Jhonson"></a>
+							</div>
+							<div class="description-wrap">
+								<h3 class="fw-normal"><a href="#"></a></h3>
+								<h4 class="fw-normal">Τεχνική Εκπαίδευση</h4>
+								<p>Ο Μιχάλης Κασάπογλου, είναι ένας από τους πιο έμπειρους τεχνικούς εκπαιδευτές στον χώρο του προγραμματισμού με πάνω από 20 χρόνια εμπειρία. Έχει εργαστεί σαν IT Operations Manager, Senior Programmer, και Training Team Leader ενώ κατέχει και αρκετές πιστοποιήσεις που καλύπτουν ένα μεγάλο φάσμα τεχνολογιών στο προγραμματισμό, σε βάσεις δεδομένων και cloud. Στον ελεύθερο του χρόνο διατηρεί ένα τεχνολογικό blog στο οποίο θα βρείτε αρκετά δωρεάν μαθήματα προγραμματισμού για αρχάριους.
+									</p>
+								<!--<a href="#" class="btn btn-default font-lato fw-semi text-uppercase">View Profile</a>-->
+							</div>
+						</div>
+					
+						<!-- reviewsList -->
+					
+						<!-- reviesSubmissionForm -->
+					
+					</article>
+					<!-- sidebar -->
+					<aside class="col-xs-12 col-md-3" id="sidebar">
+						<!-- widget course select -->
+						<section class="widget widget_box widget_course_select">
+							<header class="widgetHead text-center bg-theme">
+								<h3 class="text-uppercase">ΜΑΘΑΙΝΩ ΔΩΡΕΑΝ PYTHON</h3>
+							</header>
+							<strong class="price element-block font-lato" data-label="price:">FREE</strong>
+							<ul class="list-unstyled font-lato">
+								<!--<li><i class="far fa-user icn no-shrink"></i> 199 Students</li>-->
+								<!--<li><i class="far fa-clock icn no-shrink"></i> ΔΙΑΡΚΕΙΑ: 30 ΗΜΕΡΕΣ</li>-->
+								<!--<li><i class="fas fa-bullhorn icn no-shrink"></i> ΑΡΙΘΜΟΣ ΜΑΘΗΜΑΤΩΝ: 50</li>-->
+								<!--<li><i class="far fa-play-circle icn no-shrink"></i> Video: 12 hours</li>-->
+								<!--<li><i class="far fa-address-card icn no-shrink"></i> Certificate of Completion</li>-->
+							</ul>
+						</section>
+
+						<div class="one-third color-3 animate-box">
+							<span class="icon"><i class="icon-paypal"></i></span>
+							<div class="desc">
+								<h3>Γίνε Χορηγός στη Γνώση</h3>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
 <input type="hidden" name="hosted_button_id" value="GQD77W6K672RA" />
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
 <img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
-</form></center>
-
-<div class="author-box">
-	<div class="author-info flex flex-wrap">
-		<div class="author-avatar">
-			<img src="images/michail.jpg" alt="Michail Kassapoglou">
-
-		   
-		</div><!-- .author-avatar -->
-
-		<div class="author-details">
-			<h3 class="author-name">Michail Kassapoglou <span>Admin</span></h3>
-
-			<div class="entry-content mt-3">
-				<p>Γεια σας, είμαι ο Μιχάλης Κασάπογλου και θα σας διδάξω δωρεάν και με 
-					τον ποιο απλό 
-				  τρόπο να προγραμματίζετε στην Python. Ασχολούμαι με την τεχνική εκπαίδευση 
-					σε διάφορες πλατφόρμες, λειτουργικά συστήματα και γλώσσες προγραμματισμού 
-					πάνω από 20 έτη. 
-					Για τυχόν ερωτήσεις σας μπορείτε να επικοινωνήσετε μαζί μου 
-					στο <font color="#0000CC">Michail.Kassapoglou@gmail.com </font></p>
-			 <p>   Σας ευχαριστώ που επισκεφτήκατε την ιστοσελίδα μου.</p>
-			</div><!-- .entry-content -->
-		</div><!-- .author-details -->
-	</div><!-- .author-info -->
-</div><!-- .author-box -->
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--<div id="colorlib-subscribe" class="subs-img" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Subscribe Newsletter</h2>
-						<p>Subscribe our newsletter and get latest update</p>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="row">
-							<div class="col-md-12">
-							<form class="form-inline qbstp-header-subscribe">
-								<div class="col-three-forth">
-									<div class="form-group">
-										<input type="text" class="form-control" id="email" placeholder="Enter your email">
-									</div>
-								</div>
-								<div class="col-one-third">
-									<div class="form-group">
-										<button type="submit" class="btn btn-primary">Subscribe Now</button>
-									</div>
-								</div>
-							</form>
+</form></a></p>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>-->
-			<footer id="colorlib-footer">
-				<div class="container">
-					<div class="row row-pb-md">
-						<div class="col-md-3 colorlib-widget">
-							<h4>PURPOSE</h4>
-							<p>Ο πρωταρχικός λόγος που με ώθησε στο να δημιουργήσω αυτή την
-								ιστοσελίδα και να προσφέρω δωρεάν μαθήματα είναι γιατί πιστεύω ότι
-								η γνώση, σε οποιοδήποτε επίπεδο, πρέπει να μεταδίδεται για να έχει αξία.</p>
-							<p>
-								<ul class="colorlib-social-icons">
-									<!--<li><a href="#"><i class="icon-twitter"></i></a></li>-->
-									<li><a href="https://www.facebook.com/kassapoglou/?ref=bookmarks"><i
-												class="icon-facebook"></i></a></li>
-									<li><a href="https://www.linkedin.com/groups/4390739/"><i
-												class="icon-linkedin"></i></a></li>
-									<!--<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
-								</ul>
-							</p>
-						</div>
-						<div class="col-md-3 colorlib-widget">
-							<h4>Quick Links</h4>
-							<p>
-								<ul class="colorlib-footer-links">
-									<!--<li><a href="#"><i class="icon-check"></i> About</a></li>-->
-									<!--<li><a href="#"><i class="icon-check"></i> Testimonials</a></li>-->
-									<li><a href="https://kassapoglou.github.io/main/"><i class="icon-check"></i>
-											Home</a></li>
-									<li><a href="https://kassapoglou.github.io/python/python-programming.html"><i
-												class="icon-check"></i> PYTHON Programming</a></li>
-									<li><a href="https://kassapoglou.github.io/main/courses.html"><i
-												class="icon-check"></i> Courses</a></li>
-									<!--<li><a href="#"><i class="icon-check"></i> Event</a></li>
-								<li><a href="#"><i class="icon-check"></i> News</a></li>-->
-									<li><a href="https://kassapoglou.github.io/main/contact.html"><i
-												class="icon-check"></i> Contact</a></li>
-								</ul>
-							</p>
-						</div>
-
-						<!--<div class="col-md-3 colorlib-widget">
-						<h4>Recent Post</h4>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Creating Mobile Apps</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Creating Mobile Apps</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-						<div class="f-blog">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-							</a>
-							<div class="desc">
-								<h2><a href="blog.html">Creating Mobile Apps</a></h2>
-								<p class="admin"><span>18 April 2018</span></p>
-							</div>
-						</div>
-					</div> -->
-
-						<div class="col-md-3 colorlib-widget">
-							<h4>Contact Info</h4>
-							<ul class="colorlib-footer-links">
-
-								<li><a href="tel://6976434707"><i class="icon-phone"></i> 6976434707</a></li>
-								<li><a href="mailto:michail.kassapoglou@gmail.com"><i class="icon-envelope"></i>
-										michail.kassapoglou@gmail.com</a></li>
-								<li><a href="kassapoglou.github.io/main"><i class="icon-location4"></i>
-										kassapoglou.github.io/main</a></li>
-								<li><a href="https://www.facebook.com/kassapoglou/?ref=bookmarks"><i
-											class="icon-facebook2"></i> Facebook</a></li>
-								<li><a href="https://www.linkedin.com/groups/4390739/"><i class="icon-linkedin"></i>
-										Linkedin</a></li>
+						<!-- widget categories -->
+						<section class="widget widget_categories">
+							<h3>ΚΑΤΗΓΟΡΙΕΣ ΜΑΘΗΜΑΤΩΝ</h3>
+							<ul class="list-unstyled text-capitalize font-lato">
+								<li class="cat-item cat-item-1"><a href="#">Programming</a></li>
+								<li class="cat-item active cat-item-2"><a href="#">DevOps</a></li>
+								<li class="cat-item cat-item-3"><a href="#">Web Design</a></li>
+								<li class="cat-item cat-item-4"><a href="#">Tools</a></li>
+								<li class="cat-item cat-item-5"><a href="#">Mobile</a></li>
+								<li class="cat-item cat-item-6"><a href="#">Databases</a></li>
+								<!--<li class="cat-item cat-item-7"><a href="#">IT &amp; Software</a></li>-->
 							</ul>
+						</section>
+						<!-- widget intro -->
+					<!--	<section class="widget widget_intro">
+							<h3>Course Intro</h3>
+							<div class="aligncenter overlay">
+								<a href="http://www.youtube.com/embed/9bZkp7q19f0?autoplay=1" class="btn-play far fa-play-circle lightbox fancybox.iframe"></a>
+								<img src="http://placehold.it/260x220" alt="image description">
+							</div>
+						</section>-->
+						<!-- widget popular posts -->
+						<section class="widget widget_popular_posts">
+							<h3>ΔΗΜΟΦΙΛΗ ΣΕΜΙΝΑΡΙΑ</h3>
+							<!-- widget cources list -->
+							<ul class="widget-cources-list list-unstyled">
+								<li>
+									<a href="#">
+										<div class="alignleft">
+											<img src="jakarta.png" alt="image description">
+										</div>
+										<div class="description-wrap">
+											<h4>Εισαγωγή στην Java EE (Jakarta Enterprise)</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="alignleft">
+											<img src="javascript.png" alt="Δωρεάν μαθήματα JavaScript">
+										</div>
+										<div class="description-wrap">
+											<h4>Web προγραμματισμός με JavaScript</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="alignleft">
+											<img src="java.svg" alt="Δωρεάν μαθήματα Java">
+										</div>
+										<div class="description-wrap">
+											<h4>Βασικές αρχές προγραμματισμού με Java</h4>
+											<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</section>
+						<div class="one-third color-3 animate-box">
+							<span class="icon"><i class="icon-paypal"></i></span>
+							<div class="desc">
+								<h3>Γίνε Χορηγός στη Γνώση</h3>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="GQD77W6K672RA" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_GR/i/scr/pixel.gif" width="1" height="1" />
+</form></a></p>
+							</div>
 						</div>
-					</div>
+						<!-- widget tags -->
+						<!--<nav class="widget widget_tags">
+							<h3>Tags</h3>-->
+							<!-- tag clouds -->
+							<!--<ul class="list-unstyled tag-clouds font-lato">
+								<li><a href="#">Future</a></li>
+								<li><a href="#">Science</a></li>
+								<li><a href="#">Coding</a></li>
+								<li><a href="#">Education</a></li>
+								<li><a href="#">Technology</a></li>
+							</ul>
+						</nav>-->
+					</aside>
 				</div>
-				<div class="copy">
-					<div class="container">
+			</div>
+		</main>
+		<!-- footer area container -->
+				<!-- footer area container -->
+				<div class="footer-area bg-dark text-gray">
+					<!-- aside -->
+					<aside class="aside container">
 						<div class="row">
-							<div class="col-md-12 text-center">
+							<div class="col-xs-12 col-sm-6 col-md-3 col">
+								<div class="logo"><a href="home.html"><img src="images/logo.png" alt="studyLMS"></a></div>
+								<p>Ο πρωταρχικός λόγος που με ώθησε στο να δημιουργήσω αυτή την ιστοσελίδα και να προσφέρω δωρεάν μαθήματα είναι γιατί πιστεύω ότι η γνώση, σε οποιοδήποτε επίπεδο, πρέπει να μεταδίδεται για να έχει αξία.</p>
+								<a href="#" class="btn btn-default text-uppercase">ΞΕΚΙΝΗΣΤΕ ΤΑ ΜΑΘΗΜΑΤΑ</a>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3 col hidden-xs">
+								<h3>ΔΗΜΟΦΙΛΗ ΜΑΘΗΜΑΤΑ</h3>
+								<!-- widget cources list -->
+								<ul class="widget-cources-list list-unstyled">
+									<li>
+										<a href="https://kassapoglou.github.io/python/python.html">
+											<div class="alignleft">
+												<img src="python.png" alt="Δωρεάν μαθήματα Python">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω Python Προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="alignleft">
+												<img src="javascript.png" alt="Δωρεάν μαθήματα JavaScript">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω JavaScript προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="alignleft">
+												<img src="java.svg" alt="Δωρεάν μαθήματα Java">
+											</div>
+											<div class="description-wrap">
+												<h4>Μαθαίνω Java Προγραμματισμό</h4>
+												<strong class="price text-primary element-block font-lato text-uppercase">ΔΩΡΕΑΝ</strong>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<nav class="col-xs-12 col-sm-6 col-md-3 col">
+								<h3>ΣΥΝΔΕΣΜΟΙ</h3>
+								<!-- fooer navigation -->
+								<ul class="fooer-navigation list-unstyled">
+									<li><a href="https://kassapoglou.github.io/main/">ΑΡΧΙΚΗ</a></li>
+									<li><a href="#">ΠΡΟΓΡΑΜΜΑ</a></li>
+									<li><a href="#">ΜΑΘΗΜΑΤΑ</li>
+									<li><a href="#">ΧΟΡΗΓΟΙ</a></li>
+									<li><a href="#">ΤΕΧΝΟΛΟΓΙΑ</a></li>
+									<li><a href="#">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+									
+								</ul>
+							</nav>
+							<div class="col-xs-12 col-sm-6 col-md-3 col">
+								<h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+								<p>Μπορείτε να επικοινωνήσετε μαζί μου με τους εξής τρόπους:</p>
+								<!-- ft address -->
+								<address class="ft-address">
+									<dl>
+										<!--<dt><span class="fas fa-map-marker"><span class="sr-only">marker</span></span></dt>
+										<dd>Address: 9015 Sunset Boulevard United Kingdom</dd>-->
+										<dt><span class="fas fa-phone-square"><span class="sr-only">phone</span></span></dt>
+										<dd>Call: <a href="tel:+2156237532">+30 6976434707</a></dd>
+										<dt><span class="fas fa-envelope-square"><span class="sr-only">email</span></span></dt>
+										<dd>Email: <a href="mailto:michail.kassapoglou@gmail.com">michail.kassapoglou@gmail.com</a></dd>
+									</dl>
+								</address>
+							</div>
+						</div>
+					</aside>
+					<!-- page footer -->
+					<footer id="page-footer" class="font-lato">
+						<div class="container">
+							<div class="row holder">
+								<div class="col-xs-12 col-sm-push-6 col-sm-6">
+									<ul class="socail-networks list-unstyled">
+										<li><a href="#"><span class="fab fa-facebook"></span></a></li>
+										
+										<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+									</ul>
+								</div>
+								<div class="col-xs-12 col-sm-pull-6 col-sm-6">
+									<!--<p><a href="#">Studylms</a> | &copy; 2018 <a href="#">DesignFalls</a>, All rights reserved</p>-->
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!-- back top of the page -->
+				<span id="back-top" class="text-center fa fa-caret-up"></span>
+				<!-- loader of the page -->
+				<div id="loader" class="loader-holder">
+					<div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
+				</div>
+			</div>
+			<div class="popup-holder">
+				<div id="popup1" class="lightbox-demo">
+					<form action="#" class="user-log-form">
+						<h2>Login Form</h2>
+						<div class="form-group">
+							<input type="text" class="form-control element-block" placeholder="Username or email address *">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control element-block" placeholder="Password *">
+						</div>
+						<div class="btns-wrap">
+							<div class="wrap">
+								<label for="rem" class="custom-check-wrap fw-normal font-lato">
+									<input type="checkbox" id="rem" class="customFormReset">
+									<span class="fake-label element-block">Remember me</span>
+								</label>
+								<button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase">Login</button>
+							</div>
+							<div class="wrap text-right">
 								<p>
-									<small class="block">&copy;
-										<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-										Copyright &copy;<script>
-											document.write(new Date().getFullYear());
-										</script> All rights reserved | This template is made with <i class="icon-heart"
-											aria-hidden="true"></i> by <a href="https://colorlib.com"
-											target="_blank">Colorlib</a>
-										<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-									</small><br>
-									<small class="block">Demo Images: <a href="http://unsplash.co/"
-											target="_blank">Unsplash</a>, <a href="http://pexels.com/"
-											target="_blank">Pexels</a></small>
+									<a href="#" class="forget-link">Lost your Password?</a>
 								</p>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
-			</footer>
-		</div>
-
-		<div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
-		</div>
-
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- jQuery Easing -->
-		<script src="js/jquery.easing.1.3.js"></script>
-		<!-- Bootstrap -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Waypoints -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<!-- Stellar Parallax -->
-		<script src="js/jquery.stellar.min.js"></script>
-		<!-- Flexslider -->
-		<script src="js/jquery.flexslider-min.js"></script>
-		<!-- Owl carousel -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- Magnific Popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/magnific-popup-options.js"></script>
-		<!-- Counters -->
-		<script src="js/jquery.countTo.js"></script>
-		<!-- Main -->
-		<script src="js/main.js"></script>
-
-</body>
-
-</html>
+				<div id="popup2" class="lightbox-demo">
+					<form action="#" class="user-log-form">
+						<h2>Register Form</h2>
+						<div class="form-group">
+							<input type="email" class="form-control element-block" placeholder="Email address *">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control element-block" placeholder="Password *">
+						</div>
+						<div class="btns-wrap">
+							<div class="wrap">
+								<button type="submit" class="btn btn-theme btn-warning fw-bold font-lato text-uppercase">Register</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- include jQuery -->
+			<script src="js/jquery.js"></script>
+			<!-- include jQuery -->
+			<script src="js/plugins.js"></script>
+			<!-- include jQuery -->
+			<script src="js/jquery.main.js"></script>
+			<!-- include jQuery -->
+			<script type="text/javascript" src="js/init.js"></script>
+		</body>
+		</html>

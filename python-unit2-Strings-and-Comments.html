@@ -201,7 +201,7 @@
 					<!-- content -->
 					<article id="content" class="col-xs-12 col-md-9">
 						<!-- content h1 -->
-						<h1 class="content-h1 fw-semi">ΕΝΟΤΗΤΑ 14 - Lists and Tuples (Part 3)</h1>
+						<h1 class="content-h1 fw-semi">ΕΝΟΤΗΤΑ 2 - Python Strings and Comments</h1>
 						<!-- view header -->
 						<header class="view-header row">
 							<div class="col-xs-12 col-sm-9 d-flex">
@@ -246,178 +246,193 @@
 						<div class="aligncenter content-aligncenter">
 							<img src="images/python3.jpg" alt="image description">
 						</div>
-						<p>Στο σημερινό δωρεάν μάθημα Python θα ολοκληρώσουμε την αναφορά μας στα Lists και στα Tuples. Ενώ τα στοιχεία αυτά τα αναλύουμε μεμονωμένα, αργότερα θα έχουμε την ευκαιρία να τα συνδυάσουμε με αντικείμενα και μεθόδους και θα αποκτήσουν μεγαλύτερη χρησιμότητα.</p>
+						
+						<p>Στο σημερινό δωρεάν μάθημα Python θα μιλήσουμε λίγο περισσότερο
+							για τα μηνύματα
+στην Python και πιο συγκεκριμένα θα δούμε την χρήση των Strings
+και τις δυνατότητές τους όπως και πως προσθέτουμε σχόλια (comments)
+στον κώδικα μας.</p>
 
-<p>Μια χρήσιμη μέθοδο που μας προσφέρει η Python όσο αφορά τα Lists είναι η <strong>sort( )</strong>. Με την μέθοδο αυτή μπορούμε να ταξινομήσουμε τα δεδομένα μας από το μικρότερο στο μεγαλύτερο με πολύ εύκολο τρόπο.</p>
+<p>Στον προηγούμενο κώδικα μας είχαμε γράψει τον εξής απλό κώδικα:</p>
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+<xmp>
+print('Hello, this is my first Python Program')
+  </xmp></pre>
+
+
+<p>Ένα function αποτελείται από κώδικα που ήδη έχει γραφτεί και 
+όταν καλείται εκτελεί μια προκαθορισμένη ενέργεια. Μέσα 
+από τις ενότητες του site, θα καλύψουμε ένα μεγάλο εύρος 
+από τα functions που προσφέρει η Python. Ίσως η πιο σημαντική
+function είναι εκείνη που μας δείχνει το αποτέλεσμα του κώδικα
+στην οθόνη μας, δηλαδή η <strong>print( )</strong>.</p>
+
+<p>Όπως ήδη έχουμε δει, για να καλέσουμε το function απλά γράφουμε
+το όνομα του και αμέσως μετά ανοίγουμε και κλείνουμε ένα σετ
+από παρενθέσεις. Μέσα στις παρενθέσεις γράφουμε την πληροφορία
+που θέλουμε να εκτυπώσουμε. Η αρχή και το τέλος αυτής της πληροφορίας
+ορίζονται από quote marks ( ‘ ‘ ). Αν για παράδειγμα, θέλαμε να 
+εκτυπώσουμε τα χαρακτηριστικά του αυτοκινήτου που μας αρέσει μέσα 
+από ένα απλό πρόγραμμα Python θα γράφαμε:</p>
+
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
-x = [30, 10, 80, 70, 5, 22]
-x.sort()
-print(x)	
-</pre>
+<xmp>
+print('Name: Aston Martin')
+print('Model: Vanquish S Coupe')
+print('Max Speed: 324 km/h')
+ </xmp> </pre>
 
 <p><strong>Output</strong></p>
 <pre class="prettyprint">
-[5, 10, 22, 30, 70, 80]
-</pre>
+<xmp>
+Name: Aston Martin
+Model: Vanquish S Coupe
+Max Speed: 324 km/h
+ </xmp> </pre>
+
+<p>Είναι σημαντικό να γνωρίζεται ότι ο κώδικας στην Python 
+εκτελείται με την σειρά που γράφεται, δηλαδή από 
+πάνω προς τα κάτω.</p>
+
+<p>Μια ομάδα από χαρακτήρες στην Python ορίζεται σαν String. 
+Οπότε κάθε ένα από τα πιο πάνω print( ) functions στην ουσία 
+εκτυπώνει ένα String μήνυμα. Τα μηνύματα αυτά έχουμε την 
+δυνατότητα να τα περικλείουμε είτε σε single quotes ( ‘ ‘) 
+είτε σε double quotes (“ ”). Μια από τις περιπτώσεις που θα πρέπει να 
+χρησιμοποιήσουμε double quotes είναι όταν το String που θέλουμε 
+να δείξουμε στην οθόνη περιέχει απόστροφο στο συντακτικό του. Αυτό 
+θα μπέρδευε την Python και το πρόγραμμα μας δεν θα μπορούσε να
+εκτελεστεί.</p>
+
+<p>Προσθέτουμε λοιπόν ένα ακόμα print( ) στον κώδικα μας.</p>
+
+			 <p><strong>App.py</strong></p>
+<pre class="prettyprint">
+<xmp>
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: Aston Martin')
+print('Model: Vanquish S Coupe')
+print('Max Speed: 324 km/h')
+</xmp>  </pre>
+
+			  <p><strong>Output</strong></p>
+<pre class="prettyprint">
+<xmp>
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: Aston Martin
+Model: Vanquish S Coupe
+Max Speed: 324 km/h
+</xmp>   </pre>
+
+
+			  <p>Ακριβώς με την ίδια λογική θα μπορούσαμε 
+				  να χρησιμοποιήσουμε single quotes για να
+				  εκτυπώσουμε ένα μήνυμα που περιέχει double 
+				  quotes στην πρόταση του.</p>
+			  
+			  <p>Αλλάζουμε τον κώδικα μας όπως πιο κάτω:</p>
+			  
+<p><strong>App.py</strong></p>
+<pre class="prettyprint">
+<xmp>
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: "Aston Martin"')
+print('Model: "Vanquish S Coupe"')
+print('Max Speed: 324 km/h')
+</xmp>   </pre>
+
+			  <p><strong>Output</strong></p>
+<pre class="prettyprint">
+<xmp>
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: "Aston Martin"
+Model: "Vanquish S Coupe"
+Max Speed: 324 km/h
+</xmp>   </pre>
+
+			  <p>Η Python μας επιτρέπει να χρησιμοποιήσουμε και triple quotes είτε “ “ “ είτε ‘ ‘ ‘ . 
+				  Τα triple quotes εννοείται ότι μπορούν να περιέχουν μηνύματα
+				  με single quotes ή double quotes. Το κύριο χαρακτηριστικό
+				  τους όμως είναι η δυνατότητα τους να περικλείουν πολλαπλές
+				  γραμμές από Strings κάτι που λείπει σαν ικανότητα από τα 
+				  single και τα double quotes.</p>  
+								<p>Τα σχόλια με τρία quotes τα οποία περιέχουν πολλαπλές προτάσεις, ή ίσως μια παράγραφο,
+, ονομάζονται <strong> docstring </strong> και συνήθως χρησιμοποιούνται στην αρχή μιας κλάσης
+ή μιας μεθόδου.</p>
+			  
+			  <p>Αλλάζουμε λοιπόν τον κώδικα μας πάλι όπως δείχνει το πιο κάτω παράδειγμα:</p>
 		 
+							   <p><strong>App.py</strong></p>
+<pre class="prettyprint">
+<xmp>
+print(""" The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. """)
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: "Aston Martin"')
+print('Model: "Vanquish S Coupe"')
+print('Max Speed: 324 km/h')
+</xmp>  </pre>
 
-<p>Η συγκεκριμένη μέθοδος όμως αλλάζει μόνιμα την ταξινόμηση του List. Αν δεν θέλουμε να επηρεάσουμε το αρχικό List τότε έχουμε δύο επιλογές (α) μπορούμε να χρησιμοποιήσουμε την <strong>sorted( )</strong> μέθοδο ή (β) να κάνουμε ένα αντίγραφο του List και να εφαρμόσουμε το <strong>sort( )</strong> στο αντίγραφο. Ας δούμε πρώτα τον δεύτερο τρόπο.</p>
+			  <p><strong>Output</strong></p>
+<pre class="prettyprint">
+<xmp>
+ The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. 
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: "Aston Martin"
+Model: "Vanquish S Coupe"
+Max Speed: 324 km/h
+</xmp>  </pre>
+			  
+
+			  <p>Τα comments είναι σύντομες επεξηγήσεις του κώδικα με την 
+				  μορφή μικρού και συνοπτικού μηνύματος που τα αγνοεί η 
+				  Python αλλά είναι χρήσιμα στον προγραμματιστή γιατί μπορεί 
+				  να γυρίσει πίσω στον κώδικα που έγραψε πριν καιρό και να θυμηθεί 
+				  διαβάζοντας τα comments για ποιο σκοπό είχαν φτιαχτεί συγκεκριμένες
+				  ρουτίνες του κώδικα. Κάθε γραμμή comment ξεκινάει με το <strong>#</strong> σύμβολο.</p>
+			  
+			  <p>Ας αλλάξουμε τον κώδικα μας για ακόμα μια φορά έτσι ώστε να προσθέσουμε και σχόλια:</p>
+			  
+			  
 
 <p><strong>App.py</strong></p>
 <pre class="prettyprint">
-x = [30, 10, 80, 70, 5, 22]
-y = x[:]
-y.sort()
-print(x)
-print(y)		
-</pre>
+<xmp>
+# Technical specifications of the Aston Martin Vanquish
+print(""" The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. """)
+print("The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine")
+print('Name: "Aston Martin"')
+print('Model: "Vanquish S Coupe"')
+print('Max Speed: 324 km/h') # it prints the max speed of Aston Martin
+ </xmp> </pre>
 
-<p><strong>Output</strong></p>
+			  <p><strong>Output</strong></p>
 <pre class="prettyprint">
-[30, 10, 80, 70, 5, 22]
-[5, 10, 22, 30, 70, 80]	
-</pre>
+<xmp>
+ The "Aston Martin Vanquish" is a grand tourer 
+      introduced by British Luxury automobile manufacturer
+      Aston Martin in 2001 as a successor to the aging
+      Virage range. 
+The Vanquish used an upgraded version of Aston Martin's AM11 V12 engine
+Name: "Aston Martin"
+Model: "Vanquish S Coupe"
+Max Speed: 324 km/h
+</xmp>  </pre>
 
-<p>Επειδή η Python είναι αρκετά ευέλικτη γλώσσα προγραμματισμού, μας επιτρέπει επίσης να εφαρμόσουμε την sort( ) μέθοδο και σε strings.</p>
-
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-x = ['you', 'will', 'never', 'walk', 'alone']
-x.sort()
-print(x)			
-</pre>
-
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-['alone', 'never', 'walk', 'will', 'you']
-</pre>
-
-<p>Γενικότερα η sort( ) μέθοδο μπορεί να εφαρμοστεί σε οποιαδήποτε data types αρκεί όμως όλες οι τιμές του List να είναι το ίδιο data type. Αν λοιπόν ένα list περιέχει αριθμούς και strings ταυτόχρονα σαν δεδομένα και προσπαθήσουμε να εφαρμόσουμε την sort( ) μέθοδο, η Python θα μας γυρίσει πίσω exception διαμαρτυρόμενη ότι δεν μπορεί να εκτελέσει την συγκεκριμένη μέθοδο στην List.</p>
-
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-x = [1, 'you', 'will', 'never', 'walk', 'alone']
-x.sort()
-print(x)				
-</pre>
-
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-Traceback (most recent call last):
-File "c:/Users/Michail/Desktop/Training/Python/pythonpractice/app.py", line 2, in <module>
-x.sort()
-TypeError: '<' not supported between instances of 'str' and 'int'  
-</pre>
-
-<p>Όπως ήδη αναφέραμε, υπάρχουν δύο τρόποι για να κάνουμε sort σε μια List χωρίς να επηρεάσουμε την αρχική. Είδαμε τον δεύτερο τρόπο, κατά τον οποίο αντιγράφουμε την αρχική List σε μια καινούργια και εφαρμόζουμε εκεί την ταξινόμηση των δεδομένων. Υπάρχει όμως και η <strong>sorted( )</strong> μέθοδο η οποία εφαρμόζει την λογική του sort προσωρινά μόνο κατά την διάρκεια της εκτέλεσης της. Η αρχική List παραμένει όπως ήταν. Αν τώρα θέλουμε να διατηρήσουμε το αποτέλεσμα αυτού του προσωρινού sort τότε θα πρέπει να αναθέσουμε το αποτέλεσμα σε μια καινούργια List. Νομίζω είναι πολύ λογικό αυτό. </p>
-
-<p>Στο παρακάτω παράδειγμα, θα δούμε στην πράξη την θεωρία που μόλις αναλύσαμε προσθέτοντας ακόμα μια δυνατότητα ή καλύτερα ιδιότητα – το <strong>reverse sort</strong>. Είτε στην sort( ), είτε στην sorted( ) μέθοδο, μπορούμε να προσθέσουμε την  ιδιότητα reverse με την τιμή true έτσι ώστε να δεδομένα να ταξινομηθούν από τον μεγαλύτερο αριθμό προς το μικρότερο.</p>
-
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-x = [30, 10, 80, 70, 5, 22]
-y = sorted(x)
-print(y)
-z = sorted(x, reverse=True)
-print(z)					
-</pre>
-
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-[5, 10, 22, 30, 70, 80]
-[80, 70, 30, 22, 10, 5]	  
-</pre>
-
-<p>Όταν θέλουμε τώρα να βρούμε αν μια τιμή υπάρχει στο List μπορούμε να χρησιμοποιήσουμε τον <strong>in</strong> operator. Ενώ με το <strong>not in</strong> operator θέλουμε να επιβεβαιωθούμε ότι κάποια τιμή δεν υπάρχει ήδη στο List.</p>
-
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-x = ['one', 'two', 'three', 'four', 'five']
-k = 'three' in x
-print(k)
-y = 'six' not in x
-print(y)						
-</pre>
-
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-True
-True		  
-</pre>
-
-
-<p>Άλλοι operators που μπορούμε να χρησιμοποιήσουμε είναι ο <strong>+</strong> operator και ο <strong>*</strong> operator. Με τον πρώτο μπορούμε να προσθέσουμε ένα list σε ένα άλλο (κάτι αντίστοιχο του concatenation στα strings) ενώ με το δεύτερο μπορούμε να πολλαπλασιάσουμε τα δεδομένα αυξάνοντας τα κατά ένα συγκεκριμένο αριθμό.</p>
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-x = [1, 2, 3] + [4, 5, 6]
-print(x)
-
-y = x * 2
-print(y)
-
-</pre>
-  
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-[1, 2, 3, 4, 5, 6]
-[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]
-
-</pre>
-
-<p>Σειρά έχει τώρα να μιλήσουμε για τα <strong>tuples</strong>. Τα tuples είναι παρόμοια με τα lists με την μόνη διαφορά ότι δεν μπορούν να τροποποιηθούν από την στιγμή που θα δημιουργηθούν. Είναι κατά κάποιο τρόπο κλειδωμένα σετ από δεδομένα.</p>
-
-<p>Για να ξεχωρίζει η Python ένα list από ένα tuple, ενώ στο list χρησιμοποιεί <strong>[ ]</strong>, στο tuple χρησιμοποιεί <strong>( )</strong>. Μετά την δημιουργία του tuple έχουμε σχεδόν τις ίδιες μεθόδους για να λαμβάνουμε πίσω πληροφορίες για τα δεδομένα.</p>
-
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-x = (1, 2, 3)
-print(x[2])
-print(x[1:])
-
-</pre>
-
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-3
-(2, 3)
-
-</pre>
-
-<p>Για τα tuples, η Python μας προσφέρει ένα εύκολο τρόπο να αναθέτουμε τιμές από ένα tuple σε μεταβλητές. </p>
-
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-(one, two, three, four) = (1, 2, 3, 4)
-print(one)
-
-</pre>
-
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-1
-</pre>
-
-<p>Πριν κλείσουμε το σημερινό δωρεάν μάθημα Python θα ήταν χρήσιμο να απαντήσουμε και στην πιο συχνή ερώτηση που έχουν όσοι συναντάνε την έννοια του tuple και του list για πρώτη φορά – υπάρχει τρόπος να μετατρέψουμε ένα list σε tuple και το αντίστροφο? Και η απάντηση είναι ναι με την χρήση των μεθόδων <strong>tuple</strong> και <strong>list</strong> αντίστοιχα.</p>
-
-<p><strong>App.py</strong></p>
-<pre class="prettyprint">
-x = [1,2,3,4,5]
-y = tuple(x)
-print(y)
-
-k = list(y)
-print(k)
-
-</pre>
-
-<p><strong>Output</strong></p>
-<pre class="prettyprint">
-(1, 2, 3, 4, 5)
-[1, 2, 3, 4, 5]
-
-</pre>													
+<p>Όπως διαπιστώνετε και εσείς, τα comments δεν εμφανίζονται στο output αλλά
+ούτε και υπολογίζονται σαν κώδικας από την Python. Είναι απλά μικρές σημειώσεις που 
+προσθέτει ο προγραμματιστής για να του υπενθυμίζει την λογική του κώδικα.</p>
 						<!--<h3 class="content-h3">ΤΙ ΘΑ ΜΑΘΕΤΕ</h3>
 						<p>Στο πρώτο μέρος, των δωρεάν Python μαθημάτων, θα μάθετε όλες τις βασικές έννοιες που χρειάζεστε για να γράψετε τα πρώτα σας προγράμματα στην γλώσσα προγραμματισμού Python. Στην πραγματικότητα, η θεωρία που θα μάθετε, είναι σχεδόν η ίδια που θα μαθαίνατε σε οποιαδήποτε άλλη γλώσσα προγραμματισμού. </p>
 						<p>Θα αρχίσετε τα πρώτα σας βήματα στον προγραμματισμό με Python μαθαίνοντας τα διάφορα είδη data που υπάρχουν στην Python και πως μπορείτε να αποθηκεύσετε δεδομένα σε lists και dictionaries. Επίσης θα μάθετε πως να δημιουργήσετε ένα collection of data και πως μπορείτε να το χρησιμοποιήσετε με τον καλύτερο τρόπο στον κώδικα σας. Μετά θα προχωρήσουμε σε while loops και if statements έτσι ώστε να δώσουμε αυτόνομη λογική στα προγράμματα μας.</p>
